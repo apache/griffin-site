@@ -68,4 +68,8 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://git-wip-us.apache.org/repos/asf/incubator-griffin-site.git
+  branch: asf-site
+  name: guoyp
+  email: guoyp@apache.org
