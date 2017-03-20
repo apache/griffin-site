@@ -7,6 +7,7 @@ This website is based on Hexo and a default Hexo theme.
 
 ## Prerequisite
 1. Nodejs
+2. Git
 
 
 ## Install & Run
@@ -20,12 +21,12 @@ This website is based on Hexo and a default Hexo theme.
 ## Deploy to asf-site
 1. Checkout branch master
 2. Generate the site to content directory: `hexo generate`
-3. Check the changes and commit.
-4. Push asf-site to remote branch by command `hexo deploy`.
+3. Install plugin as `install hexo-deployer-git --save`
+4. Push asf-site to remote branch by command `hexo deploy`, asf-site is hard-coded in _config.yml
 
 ## Questions
 
 ### Where to check configuration
 
-Please refer to _config.yml for more details, like github branch
+Please refer to _config.yml for more details.
 
