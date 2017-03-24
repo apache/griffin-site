@@ -69,3 +69,10 @@ The idea of  Apache Apache Griffin is to provide Data Quality validation as a Se
  - A centralized data quality model management system including rule, metadata, scheduler etc.  
  - Native code generation to run everywhere, including Hadoop, Kafka, Spark, etc.
  - One set of tools to build data quality pipelines across all eBay data platforms.
+
+
+## Disclaimer
+
+Apache Griffin is an effort undergoing incubation at The Apache Software Foundation (ASF), sponsored by the Apache Incubator. Incubation is required of all newly accepted projects until a further review indicates that the infrastructure, communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. While incubation status is not necessarily a reflection of the completeness or stability of the code, it does indicate that the project has yet to be fully endorsed by the ASF.
+![](/images/egg-logo.png)
+
