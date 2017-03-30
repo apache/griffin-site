@@ -9,6 +9,7 @@ tags:
 dev@griffin.incubator.apache.org 
 
 [To subscribe dev list](mailto:dev-subscribe@griffin.incubator.apache.org)
+
 [To unsubscribe dev list](mailto:dev-unsubscribe@griffin.incubator.apache.org)
 
 ## Jira
