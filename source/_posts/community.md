@@ -8,7 +8,7 @@ tags:
 
 dev@griffin.incubator.apache.org 
 
-[To subscribe dev list](mailto:dev-subscribe@griffin.incubator.apache.org
+[To subscribe dev list](mailto:dev-subscribe@griffin.incubator.apache.org)
 [To unsubscribe dev list](mailto:dev-unsubscribe@griffin.incubator.apache.org)
 
 ## Jira
@@ -16,6 +16,8 @@ dev@griffin.incubator.apache.org
 https://issues.apache.org/jira/browse/GRIFFIN
 
 ## Contributing
+
+
 
 
 
