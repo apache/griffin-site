@@ -14,7 +14,11 @@ dev@griffin.incubator.apache.org
 
 ## Jira
 
-https://issues.apache.org/jira/browse/GRIFFIN
+[https://issues.apache.org/jira/browse/GRIFFIN](https://issues.apache.org/jira/browse/GRIFFIN)
+
+## Wiki
+
+[https://cwiki.apache.org/confluence/display/GRIFFIN/Griffin](https://cwiki.apache.org/confluence/display/GRIFFIN/Griffin)
 
 ## Contributing
 
