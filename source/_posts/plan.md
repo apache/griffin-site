@@ -42,26 +42,37 @@ tags:
   * end to end full pipeline use case enabled.
 
 
-#### 2017.05 streaming accuracy 
+#### 2017.05 streaming accuracy P2
 
-#### 2017.06 streaming accuracy onboard
+#### 2017.06 streaming accuracy onboard P2
 
-#### 2017.07 schedule
+#### 2017.07 schedule P4
 
-#### 2017.08 profiling
+#### 2017.08 profiling P3
 
-#### 2017.09 completeness
+#### 2017.09 completeness P2
 
-#### 2017.10 timeliness
+#### 2017.10 timeliness P2
 
-#### 2017.11 anomaly detection
+#### 2017.11 anomaly detection P3
 
-#### 2017.12 validity
+#### 2017.12 validity P3
 
 
 ## Release Notes
 
-2017.03.30 release streaming measures 
+2017.03.30 release streaming measures
+
+Weekly updates
+
+well planed and scalable 
+
+
+priority/epic/story/breakdown to backlog task.
+
+3 measures
+
+
 
 
 

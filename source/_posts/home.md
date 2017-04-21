@@ -1,5 +1,6 @@
 ---
 title: Apache Griffin
+date: 2017-03-30 10:49:47
 ---
 
 ## Abstract
@@ -74,5 +75,5 @@ The idea of  Apache Apache Griffin is to provide Data Quality validation as a Se
 ## Disclaimer
 
 Apache Griffin is an effort undergoing incubation at The Apache Software Foundation (ASF), sponsored by the Apache Incubator. Incubation is required of all newly accepted projects until a further review indicates that the infrastructure, communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. While incubation status is not necessarily a reflection of the completeness or stability of the code, it does indicate that the project has yet to be fully endorsed by the ASF.
-![](/images/egg-logo.png)
+
 
