@@ -30,3 +30,5 @@ This website is based on Hexo and a default Hexo theme.
 
 Please refer to _config.yml for more details.
 
+Thanks.
+
