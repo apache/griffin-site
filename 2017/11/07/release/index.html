@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Release | Apache Griffin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Release Notes - Apache Griffin 0.1.6 (incubating)
+Highlights
+Streaming: measure streaming data quality based on defined measurements.
+Support Griffin DSL and SQL to define data quality measurement.
+Su">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Release">
+<meta property="og:url" content="http://yoursite.com/2017/11/07/release/index.html">
+<meta property="og:site_name" content="Apache Griffin">
+<meta property="og:description" content="Release Notes - Apache Griffin 0.1.6 (incubating)
+Highlights
+Streaming: measure streaming data quality based on defined measurements.
+Support Griffin DSL and SQL to define data quality measurement.
+Su">
+<meta property="og:updated_time" content="2017-11-29T02:38:41.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Release">
+<meta name="twitter:description" content="Release Notes - Apache Griffin 0.1.6 (incubating)
+Highlights
+Streaming: measure streaming data quality based on defined measurements.
+Support Griffin DSL and SQL to define data quality measurement.
+Su">
+  
+    <link rel="alternate" href="/atom.xml" title="Apache Griffin" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Apache Griffin</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Data Quality Proposal for Streaming and Batch</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-release" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/11/07/release/" class="article-date">
+  <time datetime="2017-11-07T01:15:12.000Z" itemprop="datePublished">2017-11-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Release
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Release-Notes-Apache-Griffin-0-1-6-incubating"><a href="#Release-Notes-Apache-Griffin-0-1-6-incubating" class="headerlink" title="Release Notes - Apache Griffin 0.1.6 (incubating)"></a>Release Notes - Apache Griffin 0.1.6 (incubating)</h2><ul>
+<li>Highlights<ul>
+<li>Streaming: measure streaming data quality based on defined measurements.</li>
+<li>Support Griffin DSL and SQL to define data quality measurement.</li>
+<li>Support multiple data connectors and data sources.</li>
+<li>Fully support headless interact with restful api.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>New Feature<ul>
+<li>[GRIFFIN-40] - Enhance DSL of Griffin, to support more types of measurement as accuracy, profiling.</li>
+<li>[GRIFFIN-6 ] - Onboard streaming model for accuracy, profiling.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Improvement<ul>
+<li>[GRIFFIN-26] - Support profiling measure process in measurement</li>
+<li>[GRIFFIN-52] - Upgrade angularJS to angular2 for ui</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Bug<ul>
+<li>[GRIFFIN-31] - Localedatestring is not valid for backend tracking</li>
+<li>[GRIFFIN-38] - Fix bugs of job instance status in service</li>
+<li>[GRIFFIN-48] - Fix measure deletion bug</li>
+<li>[GRIFFIN-49] - Fix bug of cache for hive metastore data</li>
+<li>[GRIFFIN-37] - Jobs, UI should update previous fire time and next fire time in real-time</li>
+<li>[GRIFFIN-35] - Job instance state update problem</li>
+<li>[GRIFFIN-33] - Target Partition form need validation as source partition</li>
+<li>[GRIFFIN-34] - When create job, each input box should have a format check</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Task<ul>
+<li>[GRIFFIN-66] - Upgrade our maven build system for angular 2 integration</li>
+<li>[GRIFFIN-64] - Document for griffin dsl and samples</li>
+</ul>
+</li>
+</ul>
+<h2 id="Release-Notes-Apache-Griffin-0-1-5-incubating"><a href="#Release-Notes-Apache-Griffin-0-1-5-incubating" class="headerlink" title="Release Notes - Apache Griffin 0.1.5 (incubating)"></a>Release Notes - Apache Griffin 0.1.5 (incubating)</h2><ul>
+<li><p>Highlights</p>
+<ul>
+<li>Batch: measure data quality based on user defined mesurements.</li>
+<li>Standard process to define,measure and report data quality dimensions.</li>
+<li>Dashboard to interact with griffin for whole data quality cycle.</li>
+</ul>
+</li>
+<li><p>New Feature</p>
+<ul>
+<li>[GRIFFIN-11]  - Enable data quality Accuracy measure in batch mode</li>
+<li>[GRIFFIN-17]  - Create a scheduler to schedule measure jobs</li>
+</ul>
+</li>
+<li><p>Improvement</p>
+<ul>
+<li>[GRIFFIN-9] - Setup public live demo</li>
+<li>[GRIFFIN-8] - New awesome griffin logo</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Bug<ul>
+<li>[GRIFFIN-32] - Fix license header, by using SOURCE FILE HEADERS FOR CODE DEVELOPED AT THE ASF</li>
+<li>[GRIFFIN-31] - localedatestring is not valid for backend tracking</li>
+<li>[GRIFFIN-18] - The selection of hive data source can not get correct metadata from the tables in non-default database</li>
+<li>[GRIFFIN-23] - Modify ‘models’ to ‘measures’, and ‘create dq model’ to ‘create dq measure’</li>
+<li>[GRIFFIN-25] - Remove the portal of data assets registration from UI</li>
+<li>[GRIFFIN-5]  - Fix error in merge PR script</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Task<ul>
+<li>[GRIFFIN-30] - Fix license issue reported by Justin.</li>
+<li>[GRIFFIN-4] - Rename Griffin to Apache Griffin in documents</li>
+<li>[GRIFFIN-2] - Setup griffin website on apache</li>
+<li>[GRIFFIN-1] - Refactor service code to make it more open and extensible</li>
+</ul>
+</li>
+</ul>
+<h2 id="Apache-Griffin-incubating-Downloads"><a href="#Apache-Griffin-incubating-Downloads" class="headerlink" title="Apache Griffin (incubating)- Downloads"></a>Apache Griffin (incubating)- Downloads</h2><ul>
+<li><a href="https://dist.apache.org/repos/dist/release/incubator/griffin/" target="_blank" rel="external">Apache dist</a></li>
+<li><a href="https://www.apache.org/dyn/closer.cgi/incubator/griffin" target="_blank" rel="external">Other mirrors</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/11/07/release/" data-id="cjakfzvju0002z4popiwa0h93" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/03/30/home/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Apache Griffin</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Links</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/11/07/release/">Release</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/30/home/">Apache Griffin</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/community/">Community</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/03/plan/">Plan</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+      <div class="widget-wrap">
+    <div class="widget">
+        <img src="http://griffin.incubator.apache.org/images/egg-logo.png"></img>
+    </div>
+  </div>
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
