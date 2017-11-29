@@ -1,8 +1,42 @@
 ---
-title: release
-date: 2017-07-25 09:15:12
+title: Release
+date: 2017-11-07 09:15:12
 tags:
 ---
+
+## Release Notes - Apache Griffin 0.1.6 (incubating)
+
+- Highlights
+  * Streaming: measure streaming data quality based on defined measurements.
+  * Support Griffin DSL and SQL to define data quality measurement.
+  * Support multiple data connectors and data sources.
+  * Fully support headless interact with restful api.
+
+
+- New Feature
+  * [GRIFFIN-40] - Enhance DSL of Griffin, to support more types of measurement as accuracy, profiling.
+  * [GRIFFIN-6 ] - Onboard streaming model for accuracy, profiling.
+
+
+- Improvement
+  * [GRIFFIN-26] - Support profiling measure process in measurement
+  * [GRIFFIN-52] - Upgrade angularJS to angular2 for ui
+
+
+- Bug
+  * [GRIFFIN-31] - Localedatestring is not valid for backend tracking
+  * [GRIFFIN-38] - Fix bugs of job instance status in service
+  * [GRIFFIN-48] - Fix measure deletion bug
+  * [GRIFFIN-49] - Fix bug of cache for hive metastore data
+  * [GRIFFIN-37] - Jobs, UI should update previous fire time and next fire time in real-time
+  * [GRIFFIN-35] - Job instance state update problem
+  * [GRIFFIN-33] - Target Partition form need validation as source partition
+  * [GRIFFIN-34] - When create job, each input box should have a format check
+
+
+- Task
+  * [GRIFFIN-66] - Upgrade our maven build system for angular 2 integration
+  * [GRIFFIN-64] - Document for griffin dsl and samples
 
 ## Release Notes - Apache Griffin 0.1.5 (incubating)
 
@@ -36,8 +70,8 @@ tags:
   * [GRIFFIN-1] - Refactor service code to make it more open and extensible
 
 
-### Apache Griffin 0.1.5 (incubating)- Downloads
-
-* [Apache Griffin 0.1.5 (incubating)](https://www.apache.org/dyn/closer.cgi/incubator/griffin)
+## Apache Griffin (incubating)- Downloads
+* [Apache dist](https://dist.apache.org/repos/dist/release/incubator/griffin/)
+* [Other mirrors](https://www.apache.org/dyn/closer.cgi/incubator/griffin)
 
 
