@@ -55,10 +55,11 @@ You are welcome to subscribe to both mailing lists.
   ```
 - Create one new branch for this task
   ```bash
-  git clone https://github.com/apache/incubator-griffin.git
-  git checkout -b yourNewFeatrueBranch
+  # first fork this repo -- https://github.com/apache/incubator-griffin.git
+  git clone https://github.com/{YOURNAME}/incubator-griffin.git
+  # code and push to your repository
   ```
-- Commit and send pr to us
+- Commit and send PR to us
 	```
 	###please associate related JIRA TICK in your comments
 	git commit -am "For task GRIFFIN-10 , blabla..."
