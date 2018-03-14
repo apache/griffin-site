@@ -65,7 +65,7 @@ You are welcome to subscribe to both mailing lists.
 	git commit -am "For task GRIFFIN-10 , blabla..."
 	```
 
-- GRIFFIN IPMC will review and accept your pr as contributing.
+- GRIFFIN PPMC will review and accept your pr as contributing.
 
 
 ## How to become a committer
