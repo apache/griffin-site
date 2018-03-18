@@ -1,6 +1,6 @@
 ---
 title: Plan
-date: 2017-03-03 10:49:47
+date: 2018-03-18 16:33:46
 tags:
 ---
 
@@ -10,7 +10,7 @@ tags:
 | ------------- |:-------------:| -----:|
 | Measure      | accuracy | accuracy measure between single source of truth and target |
 | Measure      | profiling | profiling target data asset, providing statistics by different rules or dimensions |
-| Measure      | completeness | are all data persent|
+| Measure      | completeness | are all data present|
 | Measure      | timeliness | are data available at the specified time  |
 | Measure      | anomaly detection | data asset conform to an expected pattern or not |
 | Measure      | validity | are all data valid or not according to domain business |
@@ -21,58 +21,19 @@ tags:
 
 ## Plan
 
-#### 2017.04 batch accuracy onboard
+#### 2018.04 streaming job schedule P2
 
+#### 2018.05 completeness & consistency P2
 
-- Week01: headless batch accuracy measure
-  * headless batch accuracy measure use case onboard.
-  * headless batch accuracy measure usage document.
+#### 2018.06 validity P2
 
-- Week02: batch accuracy measure with service
-  * release batch accuracy measure with service enabled. 
-  * end2end headless workable use case, including guidance, metrics report. 
-  * prepare data in hive, explore data asset from ui, generate accuracy measure in ui, trigger accuracy measure in script.
+#### 2018.07 anomaly detection P3
 
-- Week03: batch accuracy measure with UI Page
-  * UI Page refine: remove 'create data asset' 
-  * end2end ui enabled workable use case. 
-  * prepare data in hive, explore data asset from ui, generate accuracy measure in ui, trigger accuracy measure in script.
-
-- Week04: release batch accuracy measure with UI, Service, Scheduler, Measure.
-  * end to end full pipeline use case enabled.
-
-
-#### 2017.05 streaming accuracy P2
-
-#### 2017.06 streaming accuracy onboard P2
-
-#### 2017.07 schedule P4
-
-#### 2017.08 profiling P3
-
-#### 2017.09 completeness P2
-
-#### 2017.10 timeliness P2
-
-#### 2017.11 anomaly detection P3
-
-#### 2017.12 validity P3
+#### 2018.08 enhance calculation module P2
 
 
 ## Release Notes
 
-2017.03.30 release streaming measures
-
-Weekly updates
-
-well planed and scalable 
-
-
-priority/epic/story/breakdown to backlog task.
-
-3 measures
-
-
-
-
-
+2017.07.10 Apache Griffin 0.1.5 (incubating)
+2017.11.07 Apache Griffin 0.1.6 (incubating)
+2018.03.07 start release Apache Griffin 0.2.0 (incubating)
