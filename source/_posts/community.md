@@ -68,6 +68,14 @@ You are welcome to subscribe to both mailing lists.
 - GRIFFIN PPMC will review and accept your pr as contributing.
 
 
+## Contributing to Document
+
+- Contribute to source document
+
+- Contribute to griffin site
+
+- Contribute to griffin document
+
 ## How to become a committer
 
 Committers are community members that have write access to the project’s repositories, i.e., they can modify the code, documentation, and website by themselves and also accept other contributions.
