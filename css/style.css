@@ -416,6 +416,7 @@ body {
 }
 .main-nav-link {
   font-weight: 300;
+  font-size: 18px;
   letter-spacing: 1px;
 }
 @media screen and (max-width: 479px) {
@@ -1311,6 +1312,7 @@ pre .javascript .function {
 .widget a {
   color: #258fb8;
   text-decoration: none;
+  font-size: 20px;
 }
 .widget a:hover {
   text-decoration: underline;
