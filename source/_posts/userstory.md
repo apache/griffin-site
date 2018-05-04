@@ -28,11 +28,11 @@ The input/output could be more complicated in crawler:
  * Batch & Streaming & batch-in-streaming-out: the input/output could be in HDFS & Kafka & Mongo
  * Normal Crawling & Depth Crawling
 
- | normal crawling | depth crawling
- | --------------- | --------------
-Batch |   |  	 
-streaming | 	√ | √
-batch-streaming |	| 
+  | normal crawling | depth crawling
+  | --------------- | --------------
+ Batch |   | 
+ streaming | 	V | V 
+ batch-streaming |	| 
 
 ### Trouble Shooting
 
