@@ -20,7 +20,7 @@ Crawler needs a set of metrics to evaluate its data completeness.
 Data Completeness is used to indicate whether every URL fed into crawler has its valid response in a reasonable duration.
  * if an URL has its corresponding response, called mapped URL.
  * Data Completeness is a ratio: the number unmapped URL compared with total number of URLs in a certain time window.
- * The time window here is the time window of input, not the duration mentioned above.
+ * The time window is measured based on the time window of input.
 
 ### Challenge
 
@@ -28,15 +28,10 @@ The input/output could be more complicated in crawler:
  * Batch & Streaming & batch-in-streaming-out: the input/output could be in HDFS & Kafka & Mongo
  * Normal Crawling & Depth Crawling
 
-  | normal crawling | depth crawling
-  | --------------- | --------------
- Batch |   | 
- streaming | 	V | V 
- batch-streaming |	| 
 
 ### Trouble Shooting
 
-Griffin will mark and record all the unmatched rows, so that the further trouble shooting could start with this.
+Griffin will mark and record all the unmatched rows, so that further trouble shooting could begin with this.
 Get back to streaming case, the retention time have to be extended so that trouble shooting can go with it.
 
 ### Solution
@@ -55,7 +50,7 @@ So the Data Completeness of this case is pretty easy to define:
 2.	in a certain time window, for any given URL of input,
 	* griffin searches the corresponding response in output topic of kafka
 	* if found, pick next one
-	* if not found, try again later, until a given time duration is out.
+	* if not found, try again later, until a given time duration time out.
 	* calculate the ratio, markdown the unmapped URLs
 3.	output consumer will persist the response data to HDFS. This is to optimize the memory usage, since we don’t want to keep a giant number of data in memory.
 4.	push the DQ results back to griffin DB, so that the service can offer retrieve service, and front end can show the metrics.
@@ -63,13 +58,7 @@ So the Data Completeness of this case is pretty easy to define:
 #### Crawler integration
 
 Crawler should have its own dashboard, which call the griffin service and render the metrics.
- 
 
-DQ framework:  Leveraging Apache Griffin - data quality solution for validating streaming data.  Open sourced by Data Services CCOE team on 2017 Jan. 
-End-to-end data completeness metrics for crawler streaming jobs. It’s calculated against input urls and corresponding output for each steaming job.
-dq=#(output) / #(input) * 100%   Output is: user receives output,  Input is: the number of urls which user submitted     Our Target DQ is: 95%
-   
-Griffin compares input data with output data dumped from Kafka topics every 10 seconds, if the data is found, we mark it as matched data, if not found even after 24 hours, we mark it as unmatched data and stops the comparison for these input.
 
 
 
