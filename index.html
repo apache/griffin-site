@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Griffin</title>
+    <meta name="keywords" content="Apache Griffin, Hadoop, Analyze, Data Quality, Quality, Real Time">
+    <meta name="description" content="Apache Griffin - Big Data Quality Solution For Batch and Streaming">
+    <meta name="author" content="Apache Griffin">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/misc.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/colorbox.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+
+    <!-- Baidu Analytics Tracking-->
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?43d74b26b35e1aa99faf2bc4c340a012";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <!-- Google Analytics Tracking -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-125017142-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+<!-- header start -->
+<div id="home_page">
+    <div class="topbar">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1"><span
+                                    class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+                                    class="icon-bar"></span> <span class="icon-bar"></span></button>
+                            <a class="navbar-brand" href="#"><img src="images/logo.png" height="44px"
+                                                                  style="margin-top:-7px"></a></div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right" id="top-menu">
+                                <li><a class="menu" href="#home_page">HOME</a></li>
+                                <li><a class="menu" href="#about_page">ABOUT</a></li>
+                                <li><a class="menu" href="#diagram_page">ARCHITECTURE</a></li>
+                                <li><a class="menu" href="#community_page">COMMUNITY</a></li>
+                                <li><a class="menu" href="http://github.com/apache/incubator-griffin" target="_blank"
+                                       title="Github">GITHUB</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="headerimage">
+        <div >
+            <ul class="slides">
+                <li><img src="images/slider.jpeg"></li>
+            </ul>
+        </div>
+    </div>
+    <!--<div class="particles"></div>-->
+    <div class="slider-caption">
+        <div class="homewrapper">
+            <div class="hometext">
+                <h2 style="font-weight:500;">Apache Griffin (Incubating)</h2>
+                <h3>Big Data Quality Solution For Batch and Streaming</h3>
+            </div>
+        </div>
+
+        <div class="download" style="margin-left:10px;" title="Get Started"><a href="docs/quick-start.html">GET STARTED</a></div>
+        <div class="download"><a href="docs/community.html" title="Contribute">CONTRIBUTE</a></div>
+    </div>
+</div>
+
+<!-- header end -->
+
+<!-- team start -->
+
+
+<!-- team start -->
+<div class="workwrapper" id="about_page">
+    <div class="container">
+        <div class="row">
+            <h2 class="sectiontile">ABOUT APACHE GRIFFIN</h2>
+            <div class="col-md-12">
+                <p style="width:80%; margin-left:auto; margin-right:auto;"> Apache Griffin is an open source Data
+                    Quality solution for Big Data, which supports both batch and streaming mode. It offers an unified
+                    process to measure your data quality from different perspectives, helping you build trusted data
+                    assets, therefore boost your confidence for your business. </p>
+                <br/>
+                <!--<p style="width:80%; margin-left:auto; margin-right:auto;"> Griffin provides a simplified data quality-->
+                    <!--management process, which enables you easily define a data quality domain model, and then waiting-->
+                    <!--for the data quality metrics visualized in the dashboard. All you need is to focus on what you need,-->
+                    <!--leaving the complexity of distributed big data processing to Griffin.</p>-->
+                <p style="width:80%; margin-left:auto; margin-right:auto;"> Griffin offers a set of well-defined data
+                    quality domain model, which covers most of data quality problems in general. It also define a set of
+                    data quality DSL to help users define their quality criteria. By extending the DSL, users are even
+                    able to implement their own specific features/functions in Griffin.</p>
+                <!--<p style="width:80%; margin-left:auto; margin-right:auto;"> Apache Griffin is also high performance on-->
+                    <!--data processing. It has been running on hundreds of data quality metrics in eBay, checking 700+M-->
+                    <!--records every day.</p>-->
+                <div class="sepline"></div>
+                <p>Griffin has been accepted as an Apache Incubator Project on Dec 7, 2016.</P>
+                <div class="sepline"></div>
+                <p>Griffin handle data quality issues in 3 steps:</p>
+            </div>
+        </div>
+        <section id="cd-timeline" class="cd-container" style="margin-top:-3px;">
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture"><img src="images/step1.png" alt="Picture"></div>
+                <div class="cd-timeline-content service-box-content">
+                    <h3>Step 1 Define Data Quality</h3>
+                    <p>Data scientists/analyst define their data quality requirements such as accuracy, completeness, timeliness, profiling, etc.</p>
+                </div>
+            </div>
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-movie"><img src="images/step2.png" alt="Picture"></div>
+                <div class="cd-timeline-content service-box-content">
+                    <h3>Step 2 Measure Data Quality</h3>
+                    <p>Source data will be ingested into Griffin computing cluster and Griffin will kick off data quality measurement based on data quality requirements.</p>
+                </div>
+            </div>
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-icon"><img src="images/step3.png" alt="Picture"></div>
+                <div class="cd-timeline-content service-box-content">
+                    <h3>Step 3 Metrics</h3>
+                    <p>Data quality reports as metrics will be evicted to designated destination.</p>
+                </div>
+            </div>
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-location"><img src="images/step4.png" alt="Picture"></div>
+                <div class="cd-timeline-content service-box-content">
+                    <h3>Additional Bonus</h3>
+                    <p>Griffin provides front tier for user to easily onboard any new data
+                        quality requirement into Griffin platform and write comprehensive logic to define their data quality.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- team end -->
+
+<div class="clear"></div>
+
+<!-- diagram start -->
+
+<div class="workwrapper" id="diagram_page">
+    <div class="container">
+        <div class="row">
+            <h2 class="sectiontile">ARCHITECTURE</h2>
+            <div class="col-md-12 marginbot"><img src="images/arch.png"
+                                                  style="border-radius: 10px; margin-top:10px;"></div>
+        </div>
+    </div>
+</div>
+<!-- diagram end -->
+
+<div class="clear"></div>
+
+<div class="clear"></div>
+<!-- team start -->
+<div class="client_wrapper" id="community_page">
+    <div class="container">
+        <div class="row">
+            <h2 class="sectiontile">WHO USES GRIFFIN</h2>
+            <div class="row" style="margin-top:50px;">
+                <div class="workmargin">
+                    <a href="http://www.ebay.com/"><img style="width: 130px" src="/images/ebay.png"
+                                                        class="usecaseimage"></a>
+                    <a href="http://bank.pingan.com/"><img style="width: 160px;margin-left:60px;" src="/images/payh.png"
+                                                       class="usecaseimage"></a>
+                    <a href="http://www.vip.com/"><img style="width: 160px;margin-left:60px;" src="/images/vip.png"
+                                                       class="usecaseimage"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- team end -->
+
+<div class="clear"></div>
+
+<!-- team start -->
+<div class="workwrapper" id="community_pag">
+    <div class="container">
+        <div class="row">
+            <h2 class="sectiontile">COMMUNITY</h2>
+            <div class="row" style="margin-top:50px;">
+                <div class="col-md-4 workmargin">
+                    <h4>Contribution</h4>
+                    <div style="text-align:left">
+                        <p>Get help using Griffin or contribute to the project</p>
+                        <ul>
+                            <li>
+                                <a href="/docs/community.html"><b>Mailing Lists</b></a>
+                            </li>
+                            <li>
+                                <a href="https://issues.apache.org/jira/browse/Griffin"><b>Issues Tracking</b></a>
+                            </li>
+                            <li>
+                                <a href="https://cwiki.apache.org/confluence/display/GRIFFIN/Contributing+to+Apache+Griffin"><b>How
+                                    to Contribute</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 workmargin">
+                    <h4>Events</h4>
+                    <div style="text-align:left">
+                        <p>Learn more about Griffin from Conferences</p>
+                        <ul>
+                            <li><a href="/docs/conf.html"><b>Conferences</b></a></li>
+                            <li><a href="/docs/conf.html"><b>Meetups</b></a></li>
+                        </ul>
+                    </div>
+                    <!-- <button type="button" class="btn btn-primary" onclick="window.location='https://github.com/pulsarIO/realtime-analytics/wiki/Get-Started'">Learn More Events</button> -->
+                </div>
+                <div class="col-md-4 workmargin">
+                    <h4>Apache Software Foundation</h4>
+                    <div style="text-align:left">
+                        <p></p>
+                        <ul>
+                            <li><a href="https://www.apache.org/" target="_blank"><b>Foundation</b></a></li>
+                            <li><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank"><b>License</b></a></li>
+                            <li><a href="https://www.apache.org/foundation/sponsorship" target="_blank"><b>Sponsorship</b></a></li>
+                            <li><a href="https://www.apache.org/security" target="_blank"><b>Security</b></a></li>
+                            <li><a href="https://www.apache.org/foundation/thanks" target="_blank"><b>Thanks</b></a></li>
+                            <li><a href="https://www.apache.org/foundation/policies/conduct" target="_blank"><b>Code of Conduct</b></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer start -->
+<div class="footerwrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="/images/incubator_feather_egg_logo.png" height="60">
+            </div>
+            <div class="col-md-9">
+                <div style="margin-left:auto; margin-right:auto; text-align:center;font-size:12px;">
+                    <div>
+                        Apache Griffin is an effort undergoing incubation at The <a href="http://www.apache.org">Apache Software Foundation (ASF)</a>sponsored by the Apache Incubator PMC. Incubation is required of all newly accepted projects until a further review indicates that the infrastructure, communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. While incubation status is not necessarily a reflection of the completeness or stability of the code, it does indicate that the project has yet to be fully endorsed by the ASF. Apache Pulsar (incubating) is available under the <a href="https://www.apache.org/licenses">Apache License, version 2.0</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <br/>
+            Copyright © 2018 The Apache Software Foundation. All Rights Reserved. Apache, Apache Griffin and the Apache feather logo are trademarks of The Apache Software Foundation.
+        </div>
+    </div>
+</div>
+<!-- footer end -->
+
+<!-- JavaScripts -->
+
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+
+<script>
+    var lastId,
+        topMenu = $("#top-menu"),
+        topMenuHeight = topMenu.outerHeight() + 15,
+        // All list items
+        menuItems = topMenu.find("a"),
+        // Anchors corresponding to menu items
+        scrollItems = menuItems.map(function () {
+            var item = $($(this).attr("href"));
+            if (item.length) {
+                return item;
+            }
+        });
+
+    menuItems.click(function (e) {
+        var href = $(this).attr("href"),
+            offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+        $('html, body').stop().animate({
+            scrollTop: offsetTop
+        }, 300);
+        e.preventDefault();
+    });
+    // Bind to scroll
+    $(window).scroll(function () {
+
+
+        // Get container scroll position
+        var fromTop = $(this).scrollTop() + topMenuHeight;
+        // Get id of current scroll item
+        var cur = scrollItems.map(function () {
+            if ($(this).offset().top < fromTop)
+                return this;
+        });
+        // Get the id of the current element
+        cur = cur[cur.length - 1];
+        var id = cur && cur.length ? cur[0].id : "";
+        if (lastId !== id) {
+            lastId = id;
+            // Set/remove active class
+            menuItems
+                .parent().removeClass("active")
+                .end().filter("[href=#" + id + "]").parent().addClass("active");
+        }
+    });
+</script>
+</body>
+</html>
