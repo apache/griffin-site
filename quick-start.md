@@ -1,7 +1,7 @@
 ---
 layout: doc
 title:  "Quick Start" 
-permalink: /docs/quick-start.html
+permalink: /docs/quickstart.html
 ---
 
 ## Environment Preparation
