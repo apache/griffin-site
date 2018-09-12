@@ -1,8 +1,6 @@
-public
-node_modules/*
-.deploy_git/*
 .idea/
 .sass-cache/
 _site/
+
 
 
