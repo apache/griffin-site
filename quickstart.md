@@ -8,6 +8,7 @@ permalink: /docs/quickstart.html
 Prepare the environment for Apache Griffin. 
 You can use our pre-built docker images as the environment.
 Follow the [docker guide](https://github.com/apache/incubator-griffin/blob/master/griffin-doc/docker/griffin-docker-guide.md#environment-preparation) to start up the docker images, and login to the griffin container.
+
 ```
 docker exec -it <griffin docker container id> bash
 cd ~/measure
@@ -17,6 +18,7 @@ cd ~/measure
 Prepare the test data in Hive.
 In the docker image, we've prepared two Hive tables named `demo_src` and `demo_tgt`, and the test data is generated hourly.
 The schema is like this:
+
 ```
 id                      bigint                                      
 age                     int                                         
@@ -24,6 +26,7 @@ desc                    string
 dt                      string                                      
 hour                    string 
 ```
+
 In which `dt` and `hour` are the partition columns, with string values like `20180912` and `06`.
 
 ## Configuration Files
@@ -53,7 +56,9 @@ The environment config file: env.json
   ]
 }
 ```
+
 The DQ config file: dq.json
+
 ```
 {
   "name": "batch_accu",
@@ -120,12 +125,14 @@ The DQ config file: dq.json
 
 ## Submit Measure Job
 Submit the measure job to Spark, with config file paths as parameters.
+
 ```
 spark-submit --class org.apache.griffin.measure.Application --master yarn --deploy-mode client --queue default \
 --driver-memory 1g --executor-memory 1g --num-executors 2 \
 <path>/griffin-measure.jar \
 <path>/env.json <path>/batch-accu-config.json
 ```
+
 Then you can get the calculation log in console, after the job finishes, you can get the result metrics printed. The metrics will also be saved in hdfs: `hdfs:///griffin/persist/<job name>/<timestamp>/_METRICS`.
 
 ## More Details
