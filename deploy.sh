@@ -57,14 +57,14 @@ else
   echo "Push $SITE failed"
 fi
 
-# Switch back to SOURCE branch
-git checkout $SOURCE > /dev/null 2>&1
-
-# Push the SOURCE to the server
-git push -u origin $SOURCE > /dev/null 2>&1
-if [ $? = 0 ]; then
-  echo "Push $SOURCE successful"
-else
-  echo "Push $SOURCE failed"
-fi
+## Switch back to SOURCE branch
+#git checkout $SOURCE > /dev/null 2>&1
+#
+## Push the SOURCE to the server
+#git push -u origin $SOURCE > /dev/null 2>&1
+#if [ $? = 0 ]; then
+#  echo "Push $SOURCE successful"
+#else
+#  echo "Push $SOURCE failed"
+#fi
 
