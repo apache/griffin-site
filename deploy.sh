@@ -10,7 +10,7 @@ SITE="asf-site"
 git checkout $SOURCE > /dev/null 2>&1
 
 # Get the latest commit SHA in SOURCE branch
-last_SHA=( $(git log -n 1 --pretty=oneline) )
+last_SHA=( $(git log -n 1 --pretty=format:"%H") )
 
 # use last commit sha as temp folder name
 tmp_dir="temp_$last_SHA"
