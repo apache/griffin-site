@@ -10,7 +10,7 @@ SITE="asf-site"
 git checkout $SOURCE > /dev/null 2>&1
 
 # Get the latest commit SHA in SOURCE branch
-last_SHA=( $(git log -n 1 --pretty=oneline) )
+last_SHA=( $(git log -n 1 --pretty=format:"%H") )
 
 # use last commit sha as temp folder name
 tmp_dir="temp_$last_SHA"
@@ -31,7 +31,7 @@ if [ $? = 1 ]; then
   git checkout -b $SITE > /dev/null 2>&1
   git add --all .
   git commit -m "Initial commit" > /dev/null 2>&1
-  echo "$SITE branch does not exist, created new"
+  echo "$SITE branch does not exist, create new branch $SITE"
 fi
 
 # Remove the current contents of the SITE branch and
