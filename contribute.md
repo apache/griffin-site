@@ -25,28 +25,30 @@ We recommend to first reach consensus with the community on whether a new featur
 ### Help others and join the discussions
 Most communication in the Apache Griffin community happens on two mailing lists:
 
-The user mailing lists user@griffin.incubator.apache.org is the place where users of Apache Griffin ask questions and seek for help or advice. Joining the user list and helping other users is a very good way to contribute to Griffin’s community.
+The users mailing lists users@griffin.incubator.apache.org is the place where users of Apache Griffin ask questions and seek for help or advice. Joining the user list and helping other users is a very good way to contribute to Griffin’s community.
 
-The development mailing list dev@griffin.incubator.apache.org is the place where Griffin developers exchange ideas and discuss new features, upcoming releases, and the development process in general. If you are interested in contributing code to Griffin, you should join this mailing list.
+The dev mailing list dev@griffin.incubator.apache.org is the place where Griffin developers exchange ideas and discuss new features, upcoming releases, and the development process in general. If you are interested in contributing code to Griffin, you should join this mailing list.
 
 You are welcome to subscribe to both mailing lists.
 
 ### Contributing to Code
-Create jira ticket to specify what you want to do
+
 ```
-create ticket here.
-https://issues.apache.org/jira/browse/GRIFFIN
-Create one new branch for this task
+# create jira ticket to specify what you want to do
+# https://issues.apache.org/jira/browse/GRIFFIN
+# Create one new branch for this task
 
 # first fork this to your own repo -- https://github.com/apache/incubator-griffin.git
 # then clone your own repo to your local workspace
 git clone https://github.com/{YOURNAME}/incubator-griffin.git
-# code and push to your repository
-Commit and send PR to us
 
-#### please associate related JIRA TICK in your comments
+# change code and push to your repository
+# please associate related JIRA TICK in your comments
 git commit -am "For task GRIFFIN-10 , blabla..."
-GRIFFIN PPMC will review and accept your pr as contributing.
+
+# Commit and send PR to us
+# GRIFFIN PPMC will review and accept your pr as contributing.
+
 ```
 
 
