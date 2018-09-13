@@ -126,30 +126,85 @@ under the License.
       </div>
       <div class="col-xs-6 col-sm-9 page-main-content" style="margin-left: -15px" id="loadcontent">
         <h1 class="page-header" style="margin-top: 0px">Quick Start</h1>
-        <h2 id="environment-preparation">Environment Preparation</h2>
-<p>Prepare the environment for Apache Griffin. 
-You can use our pre-built docker images as the environment.
-Follow the <a href="https://github.com/apache/incubator-griffin/blob/master/griffin-doc/docker/griffin-docker-guide.md#environment-preparation">docker guide</a> to start up the docker images, and login to the griffin container.</p>
+        <h2 id="user-story">User Story</h2>
+<p>Say we have two hive tables(demo_src, demo_tgt), we need to know what is the data quality for target table, based on source table.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker exec -it &lt;griffin docker container id&gt; bash
-cd ~/measure
-</code></pre></div></div>
-
-<h2 id="data-preparation">Data Preparation</h2>
-<p>Prepare the test data in Hive.
-In the docker image, we’ve prepared two Hive tables named <code class="highlighter-rouge">demo_src</code> and <code class="highlighter-rouge">demo_tgt</code>, and the test data is generated hourly.
-The schema is like this:</p>
-
+<p>For simplicity, suppose both two table have the same schema as this:</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>id                      bigint                                      
 age                     int                                         
 desc                    string                                      
 dt                      string                                      
 hour                    string 
 </code></pre></div></div>
+<p>dt and hour are partitions, as every date we have one big partition dt(like 20180912), for every date we have 24 hour partitions(like 01,02, …).</p>
 
-<p>In which <code class="highlighter-rouge">dt</code> and <code class="highlighter-rouge">hour</code> are the partition columns, with string values like <code class="highlighter-rouge">20180912</code> and <code class="highlighter-rouge">06</code>.</p>
+<h2 id="environment-preparation">Environment Preparation</h2>
+<p>You need to prepare the environment for Apache Griffin measure module, including the following software:</p>
+<ul>
+  <li>JDK (1.8+)</li>
+  <li>Hadoop (2.6.0+)</li>
+  <li>Spark (2.2.1+)</li>
+  <li>Hive (2.2.0)</li>
+</ul>
 
-<h2 id="configuration-files">Configuration Files</h2>
+<h2 id="build-griffin-measure-module">Build Griffin Measure Module</h2>
+<ol>
+  <li>Download Griffin source package <a href="https://www.apache.org/dist/incubator/griffin/0.3.0-incubating">here</a>.</li>
+  <li>Unzip the source package.
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>unzip griffin-0.3.0-incubating-source-release.zip
+cd griffin-0.3.0-incubating-source-release
+</code></pre></div>    </div>
+  </li>
+  <li>Build Griffin jars.
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mvn clean install
+</code></pre></div>    </div>
+
+    <p>Move the built griffin measure jar to your work path.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv measure/target/measure-0.3.0-incubating.jar &lt;work path&gt;/griffin-measure.jar
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="data-preparation">Data Preparation</h2>
+
+<p>For our quick start, We will generate two Hive tables demo_src and demo_tgt.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--create hive tables here. hql script
+--Note: replace hdfs location with your own path
+CREATE EXTERNAL TABLE `demo_src`(
+  `id` bigint,
+  `age` int,
+  `desc` string) 
+PARTITIONED BY (
+  `dt` string,
+  `hour` string)
+ROW FORMAT DELIMITED
+  FIELDS TERMINATED BY '|'
+LOCATION
+  'hdfs:///griffin/data/batch/demo_src';
+
+--Note: replace hdfs location with your own path
+CREATE EXTERNAL TABLE `demo_tgt`(
+  `id` bigint,
+  `age` int,
+  `desc` string) 
+PARTITIONED BY (
+  `dt` string,
+  `hour` string)
+ROW FORMAT DELIMITED
+  FIELDS TERMINATED BY '|'
+LOCATION
+  'hdfs:///griffin/data/batch/demo_tgt';
+
+</code></pre></div></div>
+<p>and we will load data into both two tables for every hour.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#load data here...
+</code></pre></div></div>
+
+<h2 id="define-data-quality-measure">Define data quality measure</h2>
+
+<h4 id="griffin-env-configuration">Griffin env configuration</h4>
 <p>The environment config file: env.json</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "spark": {
@@ -176,6 +231,7 @@ hour                    string
 }
 </code></pre></div></div>
 
+<h4 id="define-griffin-data-quality">Define griffin data quality</h4>
 <p>The DQ config file: dq.json</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
@@ -241,7 +297,7 @@ hour                    string
 }
 </code></pre></div></div>
 
-<h2 id="submit-measure-job">Submit Measure Job</h2>
+<h2 id="measure-data-quality">Measure data quality</h2>
 <p>Submit the measure job to Spark, with config file paths as parameters.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit --class org.apache.griffin.measure.Application --master yarn --deploy-mode client --queue default \
@@ -250,7 +306,11 @@ hour                    string
 &lt;path&gt;/env.json &lt;path&gt;/batch-accu-config.json
 </code></pre></div></div>
 
+<h2 id="report-data-quality-metrics">Report data quality metrics</h2>
 <p>Then you can get the calculation log in console, after the job finishes, you can get the result metrics printed. The metrics will also be saved in hdfs: <code class="highlighter-rouge">hdfs:///griffin/persist/&lt;job name&gt;/&lt;timestamp&gt;/_METRICS</code>.</p>
+
+<h2 id="refine-data-quality-report">Refine Data Quality report</h2>
+<p>Depends on your business, you might need to refine your data quality measure further till your are satisfied.</p>
 
 <h2 id="more-details">More Details</h2>
 <p>For more details about griffin measures, you can visit our documents in <a href="https://github.com/apache/incubator-griffin/tree/master/griffin-doc">github</a>.</p>
