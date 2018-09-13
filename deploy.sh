@@ -24,15 +24,12 @@ else
   exit 1
 fi
 
-# Switch to the SITE branch
-git checkout $SITE > /dev/null 2>&1
-if [ $? = 1 ]; then
-  # Branch does not exist. Create an orphan branch.
-  git checkout -b $SITE > /dev/null 2>&1
-  git add --all .
-  git commit -m "Initial commit" > /dev/null 2>&1
-  echo "$SITE branch does not exist, created new"
-fi
+# Delete local $SITE branch and recreate it.
+git branch -D $SITE > /dev/null 2>&1
+git checkout -b $SITE > /dev/null 2>&1
+git add --all .
+git commit -m "Initial commit" > /dev/null 2>&1
+echo "delete $SITE branch , and recreate empty one"
 
 # Remove the current contents of the SITE branch and
 #   replace them with the contents of the temp folder
