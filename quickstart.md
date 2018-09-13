@@ -3,22 +3,10 @@ layout: doc
 title:  "Quick Start" 
 permalink: /docs/quickstart.html
 ---
+## User Story
+Say we have two hive tables(demo_src, demo_tgt), we need to know what is the data quality for target table, based on source table.
 
-## Environment Preparation
-Prepare the environment for Apache Griffin. 
-You can use our pre-built docker images as the environment.
-Follow the [docker guide](https://github.com/apache/incubator-griffin/blob/master/griffin-doc/docker/griffin-docker-guide.md#environment-preparation) to start up the docker images, and login to the griffin container.
-
-```
-docker exec -it <griffin docker container id> bash
-cd ~/measure
-```
-
-## Data Preparation
-Prepare the test data in Hive.
-In the docker image, we've prepared two Hive tables named `demo_src` and `demo_tgt`, and the test data is generated hourly.
-The schema is like this:
-
+For simplicity, suppose both two table have the same schema as this:
 ```
 id                      bigint                                      
 age                     int                                         
@@ -26,10 +14,76 @@ desc                    string
 dt                      string                                      
 hour                    string 
 ```
+dt and hour are partitions, as every date we have one big partition dt(like 20180912), for every date we have 24 hour partitions(like 01,02, ...).
 
-In which `dt` and `hour` are the partition columns, with string values like `20180912` and `06`.
+## Environment Preparation
+You need to prepare the environment for Apache Griffin measure module, including the following software:
+- JDK (1.8+)
+- Hadoop (2.6.0+)
+- Spark (2.2.1+)
+- Hive (2.2.0)
 
-## Configuration Files
+## Build Griffin Measure Module
+1.  Download Griffin source package [here](https://www.apache.org/dist/incubator/griffin/0.3.0-incubating).
+2.  Unzip the source package.
+    ```
+    unzip griffin-0.3.0-incubating-source-release.zip
+    cd griffin-0.3.0-incubating-source-release
+    ```
+3.  Build Griffin jars.
+    ```
+    mvn clean install
+    ```
+    
+    Move the built griffin measure jar to your work path.
+    
+    ```
+    mv measure/target/measure-0.3.0-incubating.jar <work path>/griffin-measure.jar
+    ```
+    
+## Data Preparation
+
+For our quick start, We will generate two Hive tables demo_src and demo_tgt.
+```
+--create hive tables here. hql script
+--Note: replace hdfs location with your own path
+CREATE EXTERNAL TABLE `demo_src`(
+  `id` bigint,
+  `age` int,
+  `desc` string) 
+PARTITIONED BY (
+  `dt` string,
+  `hour` string)
+ROW FORMAT DELIMITED
+  FIELDS TERMINATED BY '|'
+LOCATION
+  'hdfs:///griffin/data/batch/demo_src';
+
+--Note: replace hdfs location with your own path
+CREATE EXTERNAL TABLE `demo_tgt`(
+  `id` bigint,
+  `age` int,
+  `desc` string) 
+PARTITIONED BY (
+  `dt` string,
+  `hour` string)
+ROW FORMAT DELIMITED
+  FIELDS TERMINATED BY '|'
+LOCATION
+  'hdfs:///griffin/data/batch/demo_tgt';
+
+```
+and we will load data into both two tables for every hour.
+
+```
+#load data here...
+```
+
+
+
+## Define data quality measure
+
+#### Griffin env configuration 
 The environment config file: env.json
 ```
 {
@@ -57,6 +111,7 @@ The environment config file: env.json
 }
 ```
 
+#### Define griffin data quality 
 The DQ config file: dq.json
 
 ```
@@ -123,7 +178,7 @@ The DQ config file: dq.json
 }
 ```
 
-## Submit Measure Job
+## Measure data quality
 Submit the measure job to Spark, with config file paths as parameters.
 
 ```
@@ -133,7 +188,12 @@ spark-submit --class org.apache.griffin.measure.Application --master yarn --depl
 <path>/env.json <path>/batch-accu-config.json
 ```
 
+## Report data quality metrics
 Then you can get the calculation log in console, after the job finishes, you can get the result metrics printed. The metrics will also be saved in hdfs: `hdfs:///griffin/persist/<job name>/<timestamp>/_METRICS`.
+
+
+## Refine Data Quality report
+Depends on your business, you might need to refine your data quality measure further till your are satisfied.
 
 ## More Details
 For more details about griffin measures, you can visit our documents in [github](https://github.com/apache/incubator-griffin/tree/master/griffin-doc).
