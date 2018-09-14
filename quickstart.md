@@ -77,13 +77,21 @@ LOCATION
   'hdfs:///griffin/data/batch/demo_tgt';
 
 ```
-and we will load data into both two tables for every hour.
-
+The data could be generated this:
 ```
-#load data here...
+1|18|student
+2|23|engineer
+3|42|cook
+...
 ```
-
-
+For demo_src and demo_tgt, there could be some different items between each other. 
+You can download [this directory](https://github.com/bhlx3lyx7/griffin-docker/tree/master/griffin_spark2/prep/data) and execute `./gen_demo_data.sh` to get the two data source files.
+Then we will load data into both two tables for every hour.
+```
+LOAD DATA LOCAL INPATH 'demo_src' INTO TABLE demo_src PARTITION (dt='20180912',hour='09');
+LOAD DATA LOCAL INPATH 'demo_tgt' INTO TABLE demo_tgt PARTITION (dt='20180912',hour='09');
+```
+Or you can just execute `./gen-hive-data.sh` in the downloaded directory above, to generate and load data into the tables hourly.
 
 ## Define data quality measure
 
@@ -194,7 +202,6 @@ spark-submit --class org.apache.griffin.measure.Application --master yarn --depl
 
 ## Report data quality metrics
 Then you can get the calculation log in console, after the job finishes, you can get the result metrics printed. The metrics will also be saved in hdfs: `hdfs:///griffin/persist/<job name>/<timestamp>/_METRICS`.
-
 
 ## Refine Data Quality report
 Depends on your business, you might need to refine your data quality measure further till your are satisfied.
