@@ -13,7 +13,7 @@ h4{font-size:18px;  font-weight:500;}
 .marginbot{margin-bottom:50px;}
 .topbar{width:100%; background-color:#0E378C; opacity:0.95; height:60px; position:fixed; z-index:10; top:0;}
 
-.headerimage{width:100%; position:relative;background-image: linear-gradient(0deg, #03DDE4 0%, #30AFED 51%, #8755FF 100%);}
+.headerimage{width:100%; position:relative;}
 .headerimage img{width:100%;}
 .blackoverlay{opacity:0.6; width:100%; height:100%; ; position:absolute; top:53px;}
 
