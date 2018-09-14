@@ -85,7 +85,7 @@ The data could be generated this:
 ...
 ```
 For demo_src and demo_tgt, there could be some different items between each other. 
-You can download [this directory](https://github.com/bhlx3lyx7/griffin-docker/tree/master/griffin_spark2/prep/data) and execute `./gen_demo_data.sh` to get the two data source files.
+You can download [demo data](/data) and execute `./gen_demo_data.sh` to get the two data source files.
 Then we will load data into both two tables for every hour.
 ```
 LOAD DATA LOCAL INPATH 'demo_src' INTO TABLE demo_src PARTITION (dt='20180912',hour='09');

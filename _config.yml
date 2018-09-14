@@ -33,7 +33,7 @@ permalink: date
 documentations:
   - category: Getting Started
     links:
-      - title: Introduction
+      - title: Quick Start
         url: /docs/quickstart.html
       - title: Use Cases
         url: /docs/usecases.html
