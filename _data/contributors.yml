@@ -20,8 +20,8 @@
 - name: William Guo
   apacheId: guoyp
   githubId: guoyuepeng
-  role: PMC
   org: eBay
+  role: PMC
 
 - name: Lionel Liu
   apacheId: lionelliu
@@ -33,6 +33,162 @@
   apacheId: liujin
   githubId: toyboxman
   org: VMWARE
+  role: Committer
+
+- name: ahutsunshine
+  apacheId:
+  githubId: ahutsunshine
+  org: meituan
+  role: Committer
+
+- name: yqxuan
+  apacheId:
+  githubId: dodobel
+  org:
+  role: Committer
+
+- name: RachelYang2
+  apacheId:
+  githubId: RachelYang2
+  org:
+  role: Committer
+
+- name: icesmartjuan
+  apacheId:
+  githubId: icesmartjuan
+  org:
+  role: Committer
+
+- name: He Wang
+  apacheId:
+  githubId: whhe
+  org:
+  role: Committer
+
+- name: Grant
+  apacheId:
+  githubId: grant-xuexu
+  org: Ontario Institute for Cancer Research
+  role: Committer
+
+- name: Jason
+  apacheId:
+  githubId: jasonliaoxiaoge
+  org: pingan
+  role: Committer
+
+- name: justACT
+  apacheId:
+  githubId: justACT
+  org:
+  role: Committer
+
+- name: evanwan87
+  apacheId:
+  githubId: evanwan87
+  org: eBay
+  role: Committer
+
+- name: Sparsh Singhal
+  apacheId:
+  githubId: SparshSinghalHM
+  org: Hashmap Tech India Limited
+  role: Committer
+
+- name: vzhao
+  apacheId:
+  githubId: vzhao
+  org:
+  role: Committer
+
+- name: panffeng
+  apacheId:
+  githubId: panffeng
+  org: eBay
+  role: Committer
+
+- name: Scott Ding
+  apacheId:
+  githubId: dingminyi
+  org: eBay
+  role: Committer
+
+- name: Louise Lu
+  apacheId:
+  githubId: ludongfang
+  org: eBay
+  role: Committer
+
+- name: forshareIT
+  apacheId:
+  githubId: forshareIT
+  org:
+  role: Committer
+
+- name: Spencer Hivert
+  apacheId:
+  githubId: spencer-hivert-ck
+  org: Credit Karma
+  role: Committer
+
+- name: 诸葛子房
+  apacheId:
+  githubId: xiaoqiu-duan
+  org:
+  role: Committer
+
+- name: zornlemma
+  apacheId:
+  githubId: zhou7yuan###gmail%%%com
+  org: eBay
+  role: Committer
+
+- name: younglee1
+  apacheId:
+  githubId: younglee1
+  org:
+  role: Committer
+
+- name: Yiye Fang
+  apacheId:
+  githubId: yiyef
+  org:
+  role: Committer
+
+- name: john.liu
+  apacheId:
+  githubId: john-liu
+  org:
+  role: Committer
+
+- name: YiliaZhang
+  apacheId:
+  githubId: Yilia05
+  org:
+  role: Committer
+
+- name: edwardhupeng
+  apacheId:
+  githubId: EdwardHoot
+  org: antfin-alipay ; ebay ; pingan
+  role: Committer
+
+- name: Alex Lv
+  apacheId:
+  githubId: alexatapache
+  org: eBay
+  role: Committer
+
+- name: Kwang-in (Dennis) Jung
+  apacheId:
+  githubId: djKooks
+  org:
+  role: Committer
+
+- name: MintL617
+  apacheId:
+  githubId: MintL617
+  org:
   role: Committer
 
 # End contributors.yml
