@@ -24,40 +24,40 @@ permalink: /docs/community.html
 
 | Name | Apacheid | Githubid | Org | Role |
 |------------------------------|--------------|-------------------------|---------------------------------------|-------------|
-| Henry Saputra | hsaputra | hsaputra |  | Mentor |
-| Kasper Sørensen | kaspersor | kaspersorensen | Satori Software | Mentor |
-| Uma Maheswara Rao Gangumalla | umamahesh |  | IBM | Mentor |
-| Luciano Resende | lresende | lresende | IBM | Mentor |
-| Liang Shao | liangshao | liangshao | eBay | PPMC |
-| William Guo | guoyp | guoyuepeng | eBay | PPMC |
-| Lionel Liu | lionelliu | bhlx3lyx7 | eBay | PPMC |
-| Vincent Zhao | wenzhao | vzhao | eBay | PPMC |
-| John Liu | johnliu | john-liu | eBay | PPMC |
-| Alex Lv | alexlv | alexatapache | eBay | PPMC |
-| Shawn Sha | yosha | yosha1 | 京东 | PPMC |
-| Eugene Liu | liujin | toyboxman | VMWARE | Committer |
 | ahutsunshine | dyyao | ahutsunshine | 美团 | Committer |
-| Yuqin Xuan | xuanyq | dodobel | 华为 | Committer |
-| Juan Li | icesmartjuan | icesmartjuan | eBay | Committer |
-| He Wang | wanghe | whhe | 网易 | Committer |
-| Grant | xuexu | grant-xuexu | Ontario Institute for Cancer Research | Committer |
-| Jason Liao | jasonliao | jasonliaoxiaoge | 平安银行 | Committer |
-| YiliaZhang |  | Yilia05 | USTC | Contributor |
-| edwardhupeng |  | EdwardHoot | Alipay | Contributor |
-| Kwang-in (Dennis) Jung |  | djKooks |  | Contributor |
-| MintL617 |  | MintL617 |  | Contributor |
-| RachelYang2 |  | RachelYang2 | 依图 | Contributor |
+| Alex Lv | alexlv | alexatapache | eBay | PPMC |
 | Chen Xiangrong |  | justACT | Paypal | Contributor |
+| edwardhupeng |  | EdwardHoot | Alipay | Contributor |
+| Eugene Liu | liujin | toyboxman | VMWARE | Committer |
 | Evan Wan |  | evanwan87 | eBay | Contributor |
-| Sparsh Singhal |  | SparshSinghalHM | Hashmap Tech India Limited | Contributor |
-| Pan Feng |  | panffeng | eBay | Contributor |
-| Scott Ding |  | dingminyi | eBay | Contributor |
-| Louise Lu |  | ludongfang | eBay | Contributor |
 | forshareIT |  | forshareIT |  | Contributor |
+| Grant | xuexu | grant-xuexu | Ontario Institute for Cancer Research | Committer |
+| He Wang | wanghe | whhe | 网易 | Committer |
+| Henry Saputra | hsaputra | hsaputra |  | Mentor |
+| Jason Liao | jasonliao | jasonliaoxiaoge | 平安银行 | Committer |
+| John Liu | johnliu | john-liu | eBay | PPMC |
+| Juan Li | icesmartjuan | icesmartjuan | eBay | Committer |
+| Kasper Sørensen | kaspersor | kaspersorensen | Satori Software | Mentor |
+| Kwang-in (Dennis) Jung |  | djKooks |  | Contributor |
+| Liang Shao | liangshao | liangshao | eBay | PPMC |
+| Lionel Liu | lionelliu | bhlx3lyx7 | eBay | PPMC |
+| Louise Lu |  | ludongfang | eBay | Contributor |
+| Luciano Resende | lresende | lresende | IBM | Mentor |
+| MintL617 |  | MintL617 |  | Contributor |
+| Pan Feng |  | panffeng | eBay | Contributor |
+| RachelYang2 |  | RachelYang2 | 依图 | Contributor |
+| Scott Ding |  | dingminyi | eBay | Contributor |
+| Shawn Sha | yosha | yosha1 | 京东 | PPMC |
+| Sparsh Singhal |  | SparshSinghalHM | Hashmap Tech India Limited | Contributor |
 | Spencer Hivert |  | spencer-hivert-ck | Credit Karma | Contributor |
-| 诸葛子房 |  | xiaoqiu-duan | 唯品会 | Contributor |
-| zornlemma |  | zhou7yuan###gmail%%%com | eBay | Contributor |
-| younglee1 |  | younglee1 |  | Contributor |
+| Uma Maheswara Rao Gangumalla | umamahesh |  | IBM | Mentor |
+| Vincent Zhao | wenzhao | vzhao | eBay | PPMC |
+| William Guo | guoyp | guoyuepeng | eBay | PPMC |
+| YiliaZhang |  | Yilia05 | USTC | Contributor |
 | Yiye Fang |  | yiyef |  | Contributor |
+| younglee1 |  | younglee1 |  | Contributor |
+| Yuqin Xuan | xuanyq | dodobel | 华为 | Committer |
+| zornlemma |  | zhou7yuan###gmail%%%com | eBay | Contributor |
+| 诸葛子房 |  | xiaoqiu-duan | 唯品会 | Contributor |
 
 
