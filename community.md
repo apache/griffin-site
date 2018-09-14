@@ -3,6 +3,11 @@ layout: doc
 title:  "Apache Griffin Community" 
 permalink: /docs/community.html
 ---
+### Team Members
+|Name|||||Apacheid|||||Githubid|Org|Role|
+|----|||||-----|||||---------|-----------|-------|
+
+
 ### Mailing Lists
 
 |Name|||||Email|||||Subscribe|Unsubscribe|Archive|
