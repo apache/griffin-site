@@ -127,20 +127,20 @@ under the License.
       <div class="col-xs-6 col-sm-9 page-main-content" style="margin-left: -15px" id="loadcontent">
         <h1 class="page-header" style="margin-top: 0px">Quick Start</h1>
         <h2 id="user-story">User Story</h2>
-<p>Say we have two hive tables(demo_src, demo_tgt), we need to know what is the data quality for target table, based on source table.</p>
+<p>Say we have two data set(demo_src, demo_tgt), we need to know what is the data quality for target data set, based on source data set.</p>
 
-<p>For simplicity, suppose both two tables have the same schema as this:</p>
+<p>For simplicity, suppose both two data set have the same schema as this:</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>id                      bigint                                      
 age                     int                                         
 desc                    string                                      
 dt                      string                                      
 hour                    string 
 </code></pre></div></div>
-<p>dt and hour are partitions,</p>
+<p>both dt and hour are partitions,</p>
 
-<p>as every date we have one partition dt(like 20180912),</p>
+<p>as every day we have one daily partition dt(like 20180912),</p>
 
-<p>for every date we have 24 hour partitions(like 01,02, …).</p>
+<p>for every day we have 24 hourly partitions(like 01,02, …).</p>
 
 <h2 id="environment-preparation">Environment Preparation</h2>
 <p>You need to prepare the environment for Apache Griffin measure module, including the following software:</p>
