@@ -18,7 +18,7 @@ both dt and hour are partitions,
 
 as every day we have one daily partition dt(like 20180912), 
 
-for every day we have 24 hourly partitions(like 01,02, ...).
+for every day we have 24 hourly partitions(like 00, 01, 02, ..., 23).
 
 ## Environment Preparation
 You need to prepare the environment for Apache Griffin measure module, including the following software:
