@@ -95,7 +95,7 @@ under the License.
         
         <li class="heading">Getting Started</li>
         
-          <li class="sidenavli  current"><a href="/docs/quickstart.html" data-permalink="/docs/quickstart.html" id="">Introduction</a></li>
+          <li class="sidenavli  current"><a href="/docs/quickstart.html" data-permalink="/docs/quickstart.html" id="">Quick Start</a></li>
         
           <li class="sidenavli  "><a href="/docs/usecases.html" data-permalink="/docs/quickstart.html" id="">Use Cases</a></li>
         
@@ -208,7 +208,7 @@ LOCATION
 ...
 </code></pre></div></div>
 <p>For demo_src and demo_tgt, there could be some different items between each other. 
-You can download <a href="https://github.com/bhlx3lyx7/griffin-docker/tree/master/griffin_spark2/prep/data">this directory</a> and execute <code class="highlighter-rouge">./gen_demo_data.sh</code> to get the two data source files.
+You can download <a href="/data">demo data</a> and execute <code class="highlighter-rouge">./gen_demo_data.sh</code> to get the two data source files.
 Then we will load data into both two tables for every hour.</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LOAD DATA LOCAL INPATH 'demo_src' INTO TABLE demo_src PARTITION (dt='20180912',hour='09');
 LOAD DATA LOCAL INPATH 'demo_tgt' INTO TABLE demo_tgt PARTITION (dt='20180912',hour='09');
