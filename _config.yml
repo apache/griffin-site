@@ -35,7 +35,7 @@ documentations:
     links:
       - title: Quick Start
         url: /docs/quickstart.html
-      - title: Use Cases
+      - title: Streaming Use Cases
         url: /docs/usecases.html
       - title: Community
         url: /docs/community.html
