@@ -44,6 +44,7 @@ permalink: /docs/community.html
 | Louise Lu |  | ludongfang | eBay | Contributor |
 | Luciano Resende | lresende | lresende | IBM | Mentor |
 | MintL617 |  | MintL617 |  | Contributor |
+| Nikolay |  | chemikadze | Grid Dynamics | Contributor |
 | Pan Feng |  | panffeng | eBay | Contributor |
 | RachelYang2 |  | RachelYang2 | 依图 | Contributor |
 | Scott Ding |  | dingminyi | eBay | Contributor |
