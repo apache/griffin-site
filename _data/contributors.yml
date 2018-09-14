@@ -17,17 +17,47 @@
 # Pages such as community.md use this data.
 # Please keep the list in alphabetical order.
 #
+- name: Henry Saputra
+  apacheId: hsaputra
+  githubId:
+  org:
+  role: Mentor
+
+- name: Kasper Sørensen
+  apacheId: kaspersor
+  githubId:
+  org:
+  role: Mentor
+
+- name: Uma Maheswara Rao Gangumalla
+  apacheId: umamahesh
+  githubId:
+  org:
+  role: Mentor
+
+- name: Luciano Resende
+  apacheId: lresende
+  githubId:
+  org:
+  role: Mentor
+
+- name: Liang Shao
+  apacheId: liangshao
+  githubId: liangshao
+  org: eBay
+  role: PPMC
+
 - name: William Guo
   apacheId: guoyp
   githubId: guoyuepeng
   org: eBay
-  role: PMC
+  role: PPMC
 
 - name: Lionel Liu
   apacheId: lionelliu
   githubId: bhlx3lyx7
   org: eBay
-  role: PMC
+  role: PPMC
 
 - name: Eugene Liu
   apacheId: liujin
@@ -36,15 +66,15 @@
   role: Committer
 
 - name: ahutsunshine
-  apacheId:
+  apacheId: dyyao
   githubId: ahutsunshine
-  org: meituan
+  org: 美团
   role: Committer
 
-- name: yqxuan
-  apacheId:
+- name: Yuqin Xuan
+  apacheId: xuanyq
   githubId: dodobel
-  org:
+  org: 华为
   role: Committer
 
 - name: RachelYang2
@@ -53,113 +83,113 @@
   org:
   role: Committer
 
-- name: icesmartjuan
-  apacheId:
+- name: Juan Li
+  apacheId: icesmartjuan
   githubId: icesmartjuan
-  org:
+  org: eBay
   role: Committer
 
 - name: He Wang
-  apacheId:
+  apacheId: wanghe
   githubId: whhe
-  org:
+  org: 网易
   role: Committer
 
 - name: Grant
-  apacheId:
+  apacheId: xuexu
   githubId: grant-xuexu
   org: Ontario Institute for Cancer Research
   role: Committer
 
-- name: Jason
-  apacheId:
+- name: Jason Liao
+  apacheId: jasonliao
   githubId: jasonliaoxiaoge
-  org: pingan
+  org: 平安银行
   role: Committer
 
-- name: justACT
+- name: Chen Xiangrong
   apacheId:
   githubId: justACT
-  org:
-  role: Committer
+  org: Paypal
+  role: Contributor
 
-- name: evanwan87
+- name: Evan Wan
   apacheId:
   githubId: evanwan87
   org: eBay
-  role: Committer
+  role: Contributor
 
 - name: Sparsh Singhal
   apacheId:
   githubId: SparshSinghalHM
   org: Hashmap Tech India Limited
-  role: Committer
+  role: Contributor
 
-- name: vzhao
-  apacheId:
+- name: Vincent Zhao
+  apacheId: wenzhao
   githubId: vzhao
-  org:
-  role: Committer
+  org: eBay
+  role: PPMC
 
-- name: panffeng
+- name: Pan Feng
   apacheId:
   githubId: panffeng
   org: eBay
-  role: Committer
+  role: Contributor
 
 - name: Scott Ding
   apacheId:
   githubId: dingminyi
   org: eBay
-  role: Committer
+  role: Contributor
 
 - name: Louise Lu
   apacheId:
   githubId: ludongfang
   org: eBay
-  role: Committer
+  role: Contributor
 
 - name: forshareIT
   apacheId:
   githubId: forshareIT
   org:
-  role: Committer
+  role: Contributor
 
 - name: Spencer Hivert
   apacheId:
   githubId: spencer-hivert-ck
   org: Credit Karma
-  role: Committer
+  role: Contributor
 
 - name: 诸葛子房
   apacheId:
   githubId: xiaoqiu-duan
-  org:
-  role: Committer
+  org: 唯品会
+  role: Contributor
 
 - name: zornlemma
   apacheId:
   githubId: zhou7yuan###gmail%%%com
   org: eBay
-  role: Committer
+  role: Contributor
 
 - name: younglee1
   apacheId:
   githubId: younglee1
   org:
-  role: Committer
+  role: Contributor
 
 - name: Yiye Fang
   apacheId:
   githubId: yiyef
   org:
-  role: Committer
+  role: Contributor
 
-- name: john.liu
-  apacheId:
+- name: John Liu
+  apacheId: johnliu
   githubId: john-liu
-  org:
-  role: Committer
+  org: eBay
+  role: PPMC
 
 - name: YiliaZhang
   apacheId:
@@ -170,14 +200,14 @@
 - name: edwardhupeng
   apacheId:
   githubId: EdwardHoot
-  org: antfin-alipay ; ebay ; pingan
+  org: Alipay
   role: Committer
 
 - name: Alex Lv
-  apacheId:
+  apacheId: alexlv
   githubId: alexatapache
   org: eBay
-  role: Committer
+  role: PPMC
 
 - name: Kwang-in (Dennis) Jung
   apacheId:
@@ -191,4 +221,9 @@
   org:
   role: Committer
 
+- name: Shawn Sha
+  apacheId: yosha
+  githubId:
+  org: 滴滴
+  role: PPMC
 # End contributors.yml
