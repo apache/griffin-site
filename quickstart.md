@@ -4,9 +4,9 @@ title:  "Quick Start"
 permalink: /docs/quickstart.html
 ---
 ## User Story
-Say we have two hive tables(demo_src, demo_tgt), we need to know what is the data quality for target table, based on source table.
+Say we have two data set(demo_src, demo_tgt), we need to know what is the data quality for target data set, based on source data set.
 
-For simplicity, suppose both two tables have the same schema as this:
+For simplicity, suppose both two data set have the same schema as this:
 ```
 id                      bigint                                      
 age                     int                                         
@@ -14,11 +14,11 @@ desc                    string
 dt                      string                                      
 hour                    string 
 ```
-dt and hour are partitions, 
+both dt and hour are partitions, 
 
-as every date we have one partition dt(like 20180912), 
+as every day we have one daily partition dt(like 20180912), 
 
-for every date we have 24 hour partitions(like 01,02, ...).
+for every day we have 24 hourly partitions(like 01,02, ...).
 
 ## Environment Preparation
 You need to prepare the environment for Apache Griffin measure module, including the following software:
