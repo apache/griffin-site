@@ -37,6 +37,8 @@ documentations:
         url: /docs/quickstart.html
       - title: Streaming Use Cases
         url: /docs/usecases.html
+      - title: Profiling Use Cases
+        url: /docs/profiling.html
       - title: Community
         url: /docs/community.html
       - title: Conference
