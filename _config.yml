@@ -45,6 +45,8 @@ documentations:
         url: /docs/conf.html
   - category: Development
     links:
+      - title: Contribution
+        url: /docs/contribute.html
       - title: Latest version (v0.3.0)
         url: /docs/latest.html
   - category: Download
