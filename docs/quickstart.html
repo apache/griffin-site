@@ -208,7 +208,7 @@ LOCATION
 ...
 </code></pre></div></div>
 <p>For demo_src and demo_tgt, there could be some different items between each other. 
-You can download <a href="/data">demo data</a> and execute <code class="highlighter-rouge">./gen_demo_data.sh</code> to get the two data source files.
+You can download <a href="/data/batch">demo data</a> and execute <code class="highlighter-rouge">./gen_demo_data.sh</code> to get the two data source files.
 Then we will load data into both two tables for every hour.</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LOAD DATA LOCAL INPATH 'demo_src' INTO TABLE demo_src PARTITION (dt='20180912',hour='09');
 LOAD DATA LOCAL INPATH 'demo_tgt' INTO TABLE demo_tgt PARTITION (dt='20180912',hour='09');
@@ -316,7 +316,7 @@ LOAD DATA LOCAL INPATH 'demo_tgt' INTO TABLE demo_tgt PARTITION (dt='20180912',h
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit --class org.apache.griffin.measure.Application --master yarn --deploy-mode client --queue default \
 --driver-memory 1g --executor-memory 1g --num-executors 2 \
 &lt;path&gt;/griffin-measure.jar \
-&lt;path&gt;/env.json &lt;path&gt;/batch-accu-config.json
+&lt;path&gt;/env.json &lt;path&gt;/dq.json
 </code></pre></div></div>
 
 <h2 id="report-data-quality-metrics">Report data quality metrics</h2>
