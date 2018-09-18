@@ -85,7 +85,7 @@ The data could be generated this:
 ...
 ```
 For demo_src and demo_tgt, there could be some different items between each other. 
-You can download [demo data](/data) and execute `./gen_demo_data.sh` to get the two data source files.
+You can download [demo data](/data/batch) and execute `./gen_demo_data.sh` to get the two data source files.
 Then we will load data into both two tables for every hour.
 ```
 LOAD DATA LOCAL INPATH 'demo_src' INTO TABLE demo_src PARTITION (dt='20180912',hour='09');
@@ -197,7 +197,7 @@ Submit the measure job to Spark, with config file paths as parameters.
 spark-submit --class org.apache.griffin.measure.Application --master yarn --deploy-mode client --queue default \
 --driver-memory 1g --executor-memory 1g --num-executors 2 \
 <path>/griffin-measure.jar \
-<path>/env.json <path>/batch-accu-config.json
+<path>/env.json <path>/dq.json
 ```
 
 ## Report data quality metrics
