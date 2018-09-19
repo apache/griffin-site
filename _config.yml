@@ -47,8 +47,6 @@ documentations:
     links:
       - title: Contribution
         url: /docs/contribute.html
-      - title: Latest version (v0.3.0)
-        url: /docs/latest.html
   - category: Download
     links:
       - title: Latest version (v0.3.0)
