@@ -43,9 +43,9 @@ permalink: /docs/download.html
 * Release notes:
 	* [griffin 0.1.5 Release Notes](https://dist.apache.org/repos/dist/dev/incubator/griffin/0.1.5-incubating/CHANGES.txt)
 * Source download:
-	* [griffin-parent-0.1.5-incubating-source-release.zip](https://dist.apache.org/repos/dist/dev/incubator/griffin/0.1.5-incubating/griffin-parent-0.1.5-incubating-source-release.zip)
-	* [griffin-parent-0.1.5-incubating-source-release.zip.sha1](https://dist.apache.org/repos/dist/dev/incubator/griffin/0.1.5-incubating/griffin-parent-0.1.5-incubating-source-release.zip.sha1)
-	* [griffin-parent-0.1.5-incubating-source-release.zip.asc](https://dist.apache.org/repos/dist/dev/incubator/griffin/0.1.5-incubating/griffin-parent-0.1.5-incubating-source-release.zip.asc)
+	* [griffin-0.1.5-incubating-source-release.zip](https://dist.apache.org/repos/dist/dev/incubator/griffin/0.1.5-incubating/griffin-parent-0.1.5-incubating-source-release.zip)
+	* [griffin-0.1.5-incubating-source-release.zip.sha1](https://dist.apache.org/repos/dist/dev/incubator/griffin/0.1.5-incubating/griffin-parent-0.1.5-incubating-source-release.zip.sha1)
+	* [griffin-0.1.5-incubating-source-release.zip.asc](https://dist.apache.org/repos/dist/dev/incubator/griffin/0.1.5-incubating/griffin-parent-0.1.5-incubating-source-release.zip.asc)
 * Git revision: 
 	* tag: [griffin-0.1.5-incubating](https://git-wip-us.apache.org/repos/asf?p=incubator-griffin.git;a=tag;h=refs/tags/griffin-0.1.5-incubating)
 
@@ -53,8 +53,8 @@ permalink: /docs/download.html
 * Release notes:
 	* [griffin 0.1.4 Release Notes](https://dist.apache.org/repos/dist/dev/incubator/griffin/0.1.4-incubating/CHANGES.txt)
 * Source download:
-	* [griffin-parent-0.1.4-incubating-source-release.zip](https://dist.apache.org/repos/dist/dev/incubator/griffin/0.1.4-incubating/griffin-parent-0.1.4-incubating-source-release.zip)
-	* [griffin-parent-0.1.4-incubating-source-release.zip.sha1](https://dist.apache.org/repos/dist/dev/incubator/griffin/0.1.4-incubating/griffin-parent-0.1.4-incubating-source-release.zip.sha1)
-	* [griffin-parent-0.1.4-incubating-source-release.zip.asc](https://dist.apache.org/repos/dist/dev/incubator/griffin/0.1.4-incubating/griffin-parent-0.1.4-incubating-source-release.zip.asc)
+	* [griffin-0.1.4-incubating-source-release.zip](https://dist.apache.org/repos/dist/dev/incubator/griffin/0.1.4-incubating/griffin-0.1.4-incubating-source-release.zip)
+	* [griffin-0.1.4-incubating-source-release.zip.sha1](https://dist.apache.org/repos/dist/dev/incubator/griffin/0.1.4-incubating/griffin-0.1.4-incubating-source-release.zip.sha1)
+	* [griffin-0.1.4-incubating-source-release.zip.asc](https://dist.apache.org/repos/dist/dev/incubator/griffin/0.1.4-incubating/griffin-0.1.4-incubating-source-release.zip.asc)
 * Git revision: 
 	* tag: [griffin-0.1.4-incubating](https://git-wip-us.apache.org/repos/asf?p=incubator-griffin.git;a=tag;h=refs/tags/griffin-0.1.4-incubating)
