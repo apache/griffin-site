@@ -29,7 +29,7 @@ permalink: /docs/community.html
 | Eugene Liu | liujin | toyboxman | VMWARE | Committer |
 | Grant | xuexu | grant-xuexu | Ontario Institute for Cancer Research | Committer |
 | He Wang | wanghe | whhe | 网易 | Committer |
-| Henry Saputra | hsaputra | hsaputra |  | Mentor |
+| Henry Saputra | hsaputra | hsaputra | ASF | Mentor |
 | Jason Liao | jasonliao | jasonliaoxiaoge | 平安银行 | Committer |
 | John Liu | johnliu | john-liu | eBay | PPMC |
 | Juan Li | icesmartjuan | icesmartjuan | eBay | Committer |
