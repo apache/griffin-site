@@ -16,7 +16,7 @@
 
 # Site settings
 title: Griffin
-email: guoyp@apache.org
+email: dev@griffin.apache.org
 description: Apache Griffin - Big Data Quality Solution For Batch and Streaming
 
 baseurl: "" # the subpath of your site, e.g. /blog/
