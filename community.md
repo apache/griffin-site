@@ -37,7 +37,7 @@ permalink: /docs/community.html
 | Liang Shao | liangshao | liangshao | eBay | PPMC |
 | Lionel Liu | lionelliu | bhlx3lyx7 | eBay | PPMC |
 | Luciano Resende | lresende | lresende | IBM | Mentor |
-| Nick Sokolov | nsokolov | chemikadze |  | Committer |
+| Nick Sokolov | nsokolov | chemikadze | Grid Dynamics | Committer |
 | Shawn Sha | yosha | yosha1 | 京东 | PPMC |
 | Uma Maheswara Rao Gangumalla | umamahesh |  | IBM | Mentor |
 | Vincent Zhao | wenzhao | vzhao | eBay | PPMC |
