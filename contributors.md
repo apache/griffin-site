@@ -14,7 +14,7 @@ permalink: /docs/contributors.html
 | Louise Lu |  | ludongfang | eBay | Contributor |
 | MintL617 |  | MintL617 |  | Contributor |
 | Pan Feng |  | panffeng | eBay | Contributor |
-| RachelYang2 |  | RachelYang2 | 依图 | Contributor |
+| RachelYang2 |  | RachelYang2 | Yitu(依图) | Contributor |
 | Scott Ding |  | dingminyi | eBay | Contributor |
 | Sparsh Singhal |  | SparshSinghalHM | Hashmap Tech India Limited | Contributor |
 | Spencer Hivert |  | spencer-hivert-ck | Credit Karma | Contributor |
@@ -22,4 +22,4 @@ permalink: /docs/contributors.html
 | Yiye Fang |  | yiyef | Santa Clara University | Contributor |
 | younglee1 |  | younglee1 |  | Contributor |
 | zornlemma |  | zornlemma | eBay | Contributor |
-| 诸葛子房 |  | xiaoqiu-duan | 唯品会 | Contributor |
+| 诸葛子房 |  | xiaoqiu-duan | Vipshop(唯品会) | Contributor |

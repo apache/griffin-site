@@ -27,20 +27,20 @@ permalink: /docs/community.html
 | Alex Lv | alexlv | alexatapache | eBay | PPMC |
 | Eugene Liu | liujin | toyboxman | VMWARE | Committer |
 | Grant | xuexu | grant-xuexu | Ontario Institute for Cancer Research | Committer |
-| He Wang | wanghe | whhe | 网易 | Committer |
+| He Wang | wanghe | whhe | NetEase(网易) | Committer |
 | Henry Saputra | hsaputra | hsaputra | ASF | Mentor |
-| Jason Liao | jasonliao | jasonliaoxiaoge | 平安银行 | Committer |
+| Jason Liao | jasonliao | jasonliaoxiaoge | Pingan Bank(平安银行) | Committer |
 | John Liu | johnliu | john-liu | eBay | PPMC |
 | Juan Li | icesmartjuan | icesmartjuan | eBay | Committer |
 | Kasper Sørensen | kaspersor | kaspersorensen | Satori Software | Mentor |
-| Kevin Yao | dyyao | ahutsunshine | 美团 | Committer |
+| Kevin Yao | dyyao | ahutsunshine | Meituan(美团) | Committer |
 | Liang Shao | liangshao | liangshao | eBay | PPMC |
 | Lionel Liu | lionelliu | bhlx3lyx7 | eBay | PPMC |
 | Luciano Resende | lresende | lresende | IBM | Mentor |
 | Nick Sokolov | nsokolov | chemikadze | Grid Dynamics | Committer |
-| Shawn Sha | yosha | yosha1 | 京东 | PPMC |
+| Shawn Sha | yosha | yosha1 | JD(京东) | PPMC |
 | Vincent Zhao | wenzhao | vzhao | eBay | PPMC |
 | William Guo | guoyp | guoyuepeng | eBay | PPMC |
-| Yuqin Xuan | xuanyq | dodobel | 华为 | Committer |
+| Yuqin Xuan | xuanyq | dodobel | Huawei(华为) | Committer |
 
 
