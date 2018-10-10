@@ -10,7 +10,6 @@ permalink: /docs/contributors.html
 | edwardhupeng |  | EdwardHoot | Alipay | Contributor |
 | Evan Wan |  | evanwan87 | eBay | Contributor |
 | forshareIT |  | forshareIT |  | Contributor |
-| He Wang | wanghe | whhe | 网易 | Committer |
 | Kwang-in (Dennis) Jung |  | djKooks |  | Contributor |
 | Louise Lu |  | ludongfang | eBay | Contributor |
 | MintL617 |  | MintL617 |  | Contributor |
@@ -22,5 +21,5 @@ permalink: /docs/contributors.html
 | YiliaZhang |  | Yilia05 | USTC | Contributor |
 | Yiye Fang |  | yiyef | Santa Clara University | Contributor |
 | younglee1 |  | younglee1 |  | Contributor |
-| zornlemma |  | zhou7yuan###gmail%%%com | eBay | Contributor |
+| zornlemma |  | zornlemma | eBay | Contributor |
 | 诸葛子房 |  | xiaoqiu-duan | 唯品会 | Contributor |
