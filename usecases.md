@@ -22,19 +22,19 @@ You need to prepare the environment for Apache Griffin measure module, including
 - Kafka (0.8.x)
 - Zookeeper (3.5+)
 
-## Build Griffin Measure Module
-1.  Download Griffin source package [here](https://www.apache.org/dist/incubator/griffin/0.3.0-incubating).
+## Build Apache Griffin Measure Module
+1.  Download Apache Griffin source package [here](https://www.apache.org/dist/incubator/griffin/0.3.0-incubating).
 2.  Unzip the source package.
     ```
     unzip griffin-0.3.0-incubating-source-release.zip
     cd griffin-0.3.0-incubating-source-release
     ```
-3.  Build Griffin jars.
+3.  Build Apache Griffin jars.
     ```
     mvn clean install
     ```
     
-    Move the built griffin measure jar to your work path.
+    Move the built apache griffin measure jar to your work path.
     
     ```
     mv measure/target/measure-0.3.0-incubating.jar <work path>/griffin-measure.jar
@@ -59,7 +59,7 @@ You can download [demo data](/data/streaming) and execute `./streaming-data.sh` 
 
 ## Define data quality measure
 
-#### Griffin env configuration 
+#### Apache Griffin env configuration 
 The environment config file: env.json
 ```
 {
@@ -241,6 +241,6 @@ Then you can get the calculation log in console, when the job runs, you can get 
 Depends on your business, you might need to refine your data quality measure further till your are satisfied.
 
 ## More Details
-For more details about griffin measures, you can visit our documents in [github](https://github.com/apache/incubator-griffin/tree/master/griffin-doc).
+For more details about apache griffin measures, you can visit our documents in [github](https://github.com/apache/incubator-griffin/tree/master/griffin-doc).
 
 

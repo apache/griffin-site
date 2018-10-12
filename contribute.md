@@ -11,12 +11,12 @@ The Apache Griffin community is eager to help and to answer your questions. We h
  - users@griffin.incubator.apache.org , [To subscribe users list](mailto:users-subscribe@griffin.incubator.apache.org)
 
 ### File a bug report
-Please let us know if you experienced a problem with Griffin and file a bug report. Open Griffin’s JIRA and click on the blue Create button at the top. Please give detailed information about the problem you encountered and, if possible, add a description that helps to reproduce the problem.
+Please let us know if you experienced a problem with Griffin and file a bug report. Open Apache Griffin’s JIRA and click on the blue Create button at the top. Please give detailed information about the problem you encountered and, if possible, add a description that helps to reproduce the problem.
 
 [https://issues.apache.org/jira/browse/GRIFFIN](https://issues.apache.org/jira/browse/GRIFFIN)
 
 ### Propose an improvement or a new feature
-Our community is constantly looking for feedback to improve Apache Griffin. If you have an idea how to improve Griffin or have a new feature in mind that would be beneficial for Griffin users, please open an issue in Griffin’s JIRA. The improvement or new feature should be described in appropriate detail and include the scope and its requirements if possible.
+Our community is constantly looking for feedback to improve Apache Griffin. If you have an idea how to improve Griffin or have a new feature in mind that would be beneficial for Apache Griffin users, please open an issue in Apache Griffin’s JIRA. The improvement or new feature should be described in appropriate detail and include the scope and its requirements if possible.
 
 We recommend to first reach consensus with the community on whether a new feature is required and how to implement a new feature, before starting with the implementation.
 
@@ -25,9 +25,9 @@ We recommend to first reach consensus with the community on whether a new featur
 ### Help others and join the discussions
 Most communication in the Apache Griffin community happens on two mailing lists:
 
-The users mailing lists users@griffin.incubator.apache.org is the place where users of Apache Griffin ask questions and seek for help or advice. Joining the user list and helping other users is a very good way to contribute to Griffin’s community.
+The users mailing lists users@griffin.incubator.apache.org is the place where users of Apache Griffin ask questions and seek for help or advice. Joining the user list and helping other users is a very good way to contribute to Apache Griffin’s community.
 
-The dev mailing list dev@griffin.incubator.apache.org is the place where Griffin developers exchange ideas and discuss new features, upcoming releases, and the development process in general. If you are interested in contributing code to Griffin, you should join this mailing list.
+The dev mailing list dev@griffin.incubator.apache.org is the place where Griffin developers exchange ideas and discuss new features, upcoming releases, and the development process in general. If you are interested in contributing code to Apache Griffin, you should join this mailing list.
 
 You are welcome to subscribe to both mailing lists.
 
@@ -47,7 +47,7 @@ git clone https://github.com/{YOURNAME}/incubator-griffin.git
 git commit -am "For task GRIFFIN-10 , blabla..."
 
 # Commit and send PR to us
-# GRIFFIN PPMC will review and accept your pr as contributing.
+# Apache GRIFFIN PPMC will review and accept your pr as contributing.
 
 ```
 
