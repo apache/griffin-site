@@ -1,4 +1,4 @@
-# Griffin Documentation Site
+# Apache Griffin Documentation Site
 Welcome to the Apache Griffin documentation!
 
 ## Prerequisites
@@ -29,7 +29,7 @@ By default, jekyll will generate the site in a `_site` directory.
         More content here ..
     
 ## Publishing the Apache Website
-In order to publish the website, you must have committer access to Griffin's apache repository.
+In order to publish the website, you must have committer access to Apache Griffin's apache repository.
 
 To publish changes, run 
 
