@@ -24,7 +24,7 @@ permalink: /docs/community.html
 
 | Name | Apacheid | Githubid | Org | Role |
 |------------------------------|--------------|-------------------------|---------------------------------------|-------------|
-| Alex Lv | alexlv | alexatapache | eBay | PPMC |
+| Alex Lv | alexlv | alexatapache | Alibaba | PPMC |
 | Eugene Liu | liujin | toyboxman | VMWARE | Committer |
 | Grant | xuexu | grant-xuexu | Ontario Institute for Cancer Research | Committer |
 | He Wang | wanghe | whhe | NetEase(网易) | Committer |
