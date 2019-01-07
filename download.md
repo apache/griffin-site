@@ -4,9 +4,9 @@ title:  "Apache Griffin Latest Download"
 permalink: /docs/download.html
 ---
 
-> Version **0.3.0** is the latest release.
+> Version **0.4.0** is the latest release.
 >
-> You can verify your download by following these [procedures](https://www.apache.org/info/verification.html) and using these [KEYS](https://dist.apache.org/repos/dist/dev/incubator/griffin/KEYS).
+> You can verify your download by following these [procedures](https://www.apache.org/info/verification.html) and using these [KEYS](https://dist.apache.org/repos/dist/release/griffin/KEYS).
 
 # 0.4.0
 * Release notes:

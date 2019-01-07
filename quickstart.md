@@ -28,11 +28,11 @@ You need to prepare the environment for Apache Griffin measure module, including
 - Hive (2.2.0)
 
 ## Build Apache Griffin Measure Module
-1.  Download Apache Griffin source package [here](https://www.apache.org/dist/incubator/griffin/0.3.0-incubating).
+1.  Download Apache Griffin source package [here](https://www.apache.org/dist/griffin/0.4.0/).
 2.  Unzip the source package.
     ```
-    unzip griffin-0.3.0-incubating-source-release.zip
-    cd griffin-0.3.0-incubating-source-release
+    unzip griffin-0.4.0-source-release.zip
+    cd griffin-0.4.0-source-release
     ```
 3.  Build Apache Griffin jars.
     ```
@@ -42,7 +42,7 @@ You need to prepare the environment for Apache Griffin measure module, including
     Move the built apache griffin measure jar to your work path.
     
     ```
-    mv measure/target/measure-0.3.0-incubating.jar <work path>/griffin-measure.jar
+    mv measure/target/measure-0.4.0.jar <work path>/griffin-measure.jar
     ```
     
 ## Data Preparation
@@ -207,4 +207,4 @@ Then you can get the calculation log in console, after the job finishes, you can
 Depends on your business, you might need to refine your data quality measure further till your are satisfied.
 
 ## More Details
-For more details about apache griffin measures, you can visit our documents in [github](https://github.com/apache/incubator-griffin/tree/master/griffin-doc).
+For more details about apache griffin measures, you can visit our documents in [github](https://github.com/apache/griffin/tree/master/griffin-doc).

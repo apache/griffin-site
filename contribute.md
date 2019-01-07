@@ -7,8 +7,8 @@ permalink: /docs/contribute.html
 ### Ask questions
 The Apache Griffin community is eager to help and to answer your questions. We have a dev/users mailing list.
 
- - dev@griffin.incubator.apache.org , [To subscribe dev list](mailto:dev-subscribe@griffin.incubator.apache.org)
- - users@griffin.incubator.apache.org , [To subscribe users list](mailto:users-subscribe@griffin.incubator.apache.org)
+ - dev@griffin.apache.org , [To subscribe dev list](mailto:dev-subscribe@griffin.apache.org)
+ - users@griffin.apache.org , [To subscribe users list](mailto:users-subscribe@griffin.apache.org)
 
 ### File a bug report
 Please let us know if you experienced a problem with Griffin and file a bug report. Open Apache Griffin’s JIRA and click on the blue Create button at the top. Please give detailed information about the problem you encountered and, if possible, add a description that helps to reproduce the problem.
@@ -25,9 +25,9 @@ We recommend to first reach consensus with the community on whether a new featur
 ### Help others and join the discussions
 Most communication in the Apache Griffin community happens on two mailing lists:
 
-The users mailing lists users@griffin.incubator.apache.org is the place where users of Apache Griffin ask questions and seek for help or advice. Joining the user list and helping other users is a very good way to contribute to Apache Griffin’s community.
+The users mailing lists users@griffin.apache.org is the place where users of Apache Griffin ask questions and seek for help or advice. Joining the user list and helping other users is a very good way to contribute to Apache Griffin’s community.
 
-The dev mailing list dev@griffin.incubator.apache.org is the place where Griffin developers exchange ideas and discuss new features, upcoming releases, and the development process in general. If you are interested in contributing code to Apache Griffin, you should join this mailing list.
+The dev mailing list dev@griffin.apache.org is the place where Griffin developers exchange ideas and discuss new features, upcoming releases, and the development process in general. If you are interested in contributing code to Apache Griffin, you should join this mailing list.
 
 You are welcome to subscribe to both mailing lists.
 
@@ -38,9 +38,9 @@ You are welcome to subscribe to both mailing lists.
 # https://issues.apache.org/jira/browse/GRIFFIN
 # Create one new branch for this task
 
-# first fork this to your own repo -- https://github.com/apache/incubator-griffin.git
+# first fork this to your own repo -- https://github.com/apache/griffin.git
 # then clone your own repo to your local workspace
-git clone https://github.com/{YOURNAME}/incubator-griffin.git
+git clone https://github.com/{YOURNAME}/griffin.git
 
 # change code and push to your repository
 # please associate related JIRA TICK in your comments
