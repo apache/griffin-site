@@ -65,3 +65,17 @@ Of course, contributing code and documentation to the project is important as we
 Candidates for new committers are suggested by current committers or PMC members, and voted upon by the PMC.
 
 If you would like to become a committer, you should engage with the community and start contributing to Apache Griffin in any of the above ways. You might also want to talk to other committers and ask for their advice and guidance.
+
+### How to configure committer's mail
+
+Committers are easy to use apache's mail to communicate on the project’s plan, progress, issue etc. When you get your apache account, you should configure a popular mail system to take over it as apache mail system is plain-vanilla for usage.
+
+Here we give configuration guide below to help you take it easily. We use outlook system as sample.
+
+* Enable setting<br>
+![outlook_setting](./images/outlook-setting.png)
+
+* Add apache mail account<br>
+![outlook_mail](./images/outlook-mail.png)
+
+After those settings, you can use your outlook account to send/receive apache mail.
