@@ -73,9 +73,9 @@ Committers are easy to use apache's mail to communicate on the project’s plan,
 Here we give configuration guide below to help you take it easily. We use outlook system as sample.
 
 * Enable setting<br>
-![outlook_setting](./images/outlook-setting.png)
+![outlook_setting](/images/outlook-setting.png)
 
 * Add apache mail account<br>
-![outlook_mail](./images/outlook-mail.png)
+![outlook_mail](/images/outlook-mail.png)
 
 After those settings, you can use your outlook account to send/receive apache mail.
