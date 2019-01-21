@@ -9,7 +9,7 @@ permalink: /docs/quickstart-cn.html
 
 在Griffin的架构中，主要分为Define、Measure和Analyze三个部分，如下图所示：
 
-![arch](images/arch-1.png)
+![arch](/images/arch-1.png)
 
 各部分的职责如下：
 
@@ -127,7 +127,7 @@ curl -XPUT http://es:9200/griffin -d '
 
 在这里我使用源码编译打包的方式来部署Griffin，Griffin的源码地址是：[https://github.com/apache/griffin.git](https://github.com/apache/griffin.git)，这里我使用的源码tag是griffin-0.4.0，下载完成在idea中导入并展开源码的结构图如下：
 
-![project](images/project.jpg)
+![project](/images/project.jpg)
 
 Griffin的源码结构很清晰，主要包括griffin-doc、measure、service和ui四个模块，其中griffin-doc负责存放Griffin的文档，measure负责与spark交互，执行统计任务，service使用spring boot作为服务实现，负责给ui模块提供交互所需的restful api，保存统计任务，展示统计结果。
 
@@ -314,7 +314,7 @@ http://IP:8080
 
 UI操作文档链接：[Apache Griffin User Guide](https://github.com/apache/griffin/blob/master/griffin-doc/ui/user-guide.md)。通过UI操作界面，我们可以创建自己的统计任务，部分结果展示界面如下：
 
-![dashboard](images/dashboard-big.png)
+![dashboard](/images/dashboard-big.png)
 
 #### 功能体验
 
