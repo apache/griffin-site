@@ -35,6 +35,8 @@ documentations:
     links:
       - title: Quick Start
         url: /docs/quickstart.html
+      - title: Quick Start (Chinese Version)
+        url: /docs/quickstart-cn.html
       - title: Streaming Use Cases
         url: /docs/usecases.html
       - title: Profiling Use Cases
