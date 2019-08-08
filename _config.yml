@@ -41,6 +41,8 @@ documentations:
         url: /docs/usecases.html
       - title: Profiling Use Cases
         url: /docs/profiling.html
+      - title: FAQ
+        url: /docs/faq.html
       - title: Community
         url: /docs/community.html
       - title: Conference
