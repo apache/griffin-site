@@ -139,14 +139,14 @@ Griffin的源码结构很清晰，主要包括griffin-doc、measure、service和
 # Apache Griffin应用名称
 spring.application.name=griffin_service
 # MySQL数据库配置信息
-spring.datasource.url=jdbc:mysql://10.104.20.126:3306/griffin_quartz?useSSL=false
-spring.datasource.username=xnuser
-spring.datasource.password=Xn20!@n0oLk
+spring.datasource.url=jdbc:mysql://10.xxx.xx.xxx:3306/griffin_quartz?useSSL=false
+spring.datasource.username=xxxxx
+spring.datasource.password=xxxxx
 spring.jpa.generate-ddl=true
 spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 spring.jpa.show-sql=true
 # Hive metastore配置信息
-hive.metastore.uris=thrift://namenodetest01.bi:9083
+hive.metastore.uris=thrift://namenode.test01.xxx:9083
 hive.metastore.dbname=default
 hive.hmshandler.retry.attempts=15
 hive.hmshandler.retry.interval=2000ms
@@ -262,7 +262,7 @@ org.quartz.jobStore.clusterCheckinInterval=20000
     {
       "type": "HDFS",
       "config": {
-        "path": "hdfs://namenodetest01.bi.10101111.com:9001/griffin/persist",
+        "path": "hdfs://namenodetest01.xx.xxxx.com:9001/griffin/persist",
         "max.persist.lines": 10000,
         "max.lines.per.file": 10000
       }
@@ -271,7 +271,7 @@ org.quartz.jobStore.clusterCheckinInterval=20000
       "type": "ELASTICSEARCH",
       "config": {
         "method": "post",
-        "api": "http://10.104.110.119:9200/griffin/accuracy",
+        "api": "http://10.xxx.xxx.xxx:9200/griffin/accuracy",
         "connection.timeout": "1m",
         "retry": 10
       }
