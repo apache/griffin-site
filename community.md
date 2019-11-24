@@ -24,23 +24,24 @@ permalink: /docs/community.html
 
 | Name | Apacheid | Githubid | Org | Role |
 |------------------------------|--------------|-------------------------|---------------------------------------|-------------|
-| Alex Lv | alexlv | alexatapache | Alibaba | PPMC |
-| Eugene Liu | liujin | toyboxman | VMWARE | Committer |
-| Grant | xuexu | grant-xuexu | Ontario Institute for Cancer Research | Committer |
-| He Wang | wanghe | whhe | NetEase(网易) | Committer |
-| Henry Saputra | hsaputra | hsaputra | ASF | Mentor |
-| Jason Liao | jasonliao | jasonliaoxiaoge | Pingan Bank(平安银行) | Committer |
-| John Liu | johnliu | john-liu | eBay | PPMC |
-| Juan Li | icesmartjuan | icesmartjuan | eBay | Committer |
-| Kasper Sørensen | kaspersor | kaspersorensen | Satori Software | Mentor |
-| Kevin Yao | dyyao | ahutsunshine | Meituan(美团) | Committer |
-| Liang Shao | liangshao | liangshao | eBay | PPMC |
-| Lionel Liu | lionelliu | bhlx3lyx7 | eBay | PPMC |
-| Luciano Resende | lresende | lresende | IBM | Mentor |
-| Nick Sokolov | nsokolov | chemikadze | Grid Dynamics | Committer |
-| Shawn Sha | yosha | yosha1 | JD(京东) | PPMC |
-| Vincent Zhao | wenzhao | vzhao | eBay | PPMC |
-| William Guo | guoyp | guoyuepeng | eBay | PPMC |
-| Yuqin Xuan | xuanyq | dodobel | Huawei(华为) | Committer |
+| William Guo | guoyp | guoyuepeng | eBay | PMC(Chair) |
+| Alex Lv | alexlv | alexatapache | Alibaba | PMC |
+| Eugene Liu | liujin | toyboxman | VMWARE | PMC |
+| Grant | xuexu | grant-xuexu | Ontario Institute for Cancer Research | PMC |
+| He Wang | wanghe | whhe | NetEase(网易) | PMC |
+| Henry Saputra | hsaputra | hsaputra | ASF | PMC(Mentor) |
+| Jason Liao | jasonliao | jasonliaoxiaoge | Pingan Bank(平安银行) | PMC |
+| John Liu | johnliu | john-liu | eBay | PMC |
+| Juan Li | icesmartjuan | icesmartjuan | eBay | PMC |
+| Kasper Sørensen | kaspersor | kaspersorensen | Satori Software | PMC(Mentor) |
+| Kevin Yao | dyyao | ahutsunshine | Meituan(美团) | PMC |
+| Liang Shao | liangshao | liangshao | eBay | PMC |
+| Lionel Liu | lionelliu | bhlx3lyx7 | eBay | PMC |
+| Luciano Resende | lresende | lresende | IBM | PMC(Mentor) |
+| Nick Sokolov | nsokolov | chemikadze | Grid Dynamics | PMC |
+| Shawn Sha | yosha | yosha1 | JD(京东) | PMC |
+| Vincent Zhao | wenzhao | vzhao | eBay | PMC |
+| Yuqin Xuan | xuanyq | dodobel | Huawei(华为) | PMC |
+| Wan Kun | wankun | wankunde | leyantech(乐言科技) | PMC |
 
 
