@@ -20,7 +20,7 @@ permalink: /docs/community.html
 
 
 
-### Apache Griffin PPMC And Committers
+### Apache Griffin PMC
 
 | Name | Apacheid | Githubid | Org | Role |
 |------------------------------|--------------|-------------------------|---------------------------------------|-------------|
