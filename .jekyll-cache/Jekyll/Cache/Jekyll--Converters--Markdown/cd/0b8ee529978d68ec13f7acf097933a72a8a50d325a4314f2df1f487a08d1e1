@@ -1,0 +1,237 @@
+I"<h3 id="mailing-lists">Mailing Lists</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th>Email</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th>Subscribe</th>
+      <th>Unsubscribe</th>
+      <th>Archive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Users Mailling List</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><a href="mailto:users@griffin.apache.org">users@griffin.apache.org</a></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><a href="mailto:users-subscribe@griffin.apache.org">subscribe</a></td>
+      <td><a href="mailto:users-unsubscribe@griffin.apache.org">unsubscribe</a></td>
+      <td><a href="http://mail-archives.apache.org/mod_mbox/griffin-users/">Griffin-users</a></td>
+    </tr>
+    <tr>
+      <td>Dev Mailling List</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><a href="mailto:dev@griffin.apache.org">dev@griffin.apache.org</a></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><a href="mailto:dev-subscribe@griffin.apache.org">subscribe</a></td>
+      <td><a href="mailto:dev-unsubscribe@griffin.apache.org">unsubscribe</a></td>
+      <td><a href="http://mail-archives.apache.org/mod_mbox/griffin-dev/">Griffin-dev</a></td>
+    </tr>
+    <tr>
+      <td>Issues Mailling List</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><a href="mailto:issues@griffin.apache.org">issues@griffin.apache.org</a></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><a href="mailto:issues-subscribe@griffin.apache.org">subscribe</a></td>
+      <td><a href="mailto:issues-unsubscribe@griffin.apache.org">unsubscribe</a></td>
+      <td><a href="http://mail-archives.apache.org/mod_mbox/griffin-issues/">Griffin-issues</a></td>
+    </tr>
+    <tr>
+      <td>Commits Mailling List</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><a href="mailto:commits@griffin.apache.org">commits@griffin.apache.org</a></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><a href="mailto:commits-subscribe@griffin.apache.org">subscribe</a></td>
+      <td><a href="mailto:commits-unsubscribe@griffin.apache.org">unsubscribe</a></td>
+      <td><a href="http://mail-archives.apache.org/mod_mbox/griffin-commits/">Griffin-commits</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="issue-tracker">Issue Tracker</h3>
+<p><a href="https://issues.apache.org/jira/browse/griffin">https://issues.apache.org/jira/browse/griffin</a></p>
+
+<h3 id="apache-griffin-pmc">Apache Griffin PMC</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Apacheid</th>
+      <th>Githubid</th>
+      <th>Org</th>
+      <th>Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Liang Shao</td>
+      <td>liangshao</td>
+      <td>liangshao</td>
+      <td>eBay</td>
+      <td>PMC</td>
+    </tr>
+    <tr>
+      <td>William Guo</td>
+      <td>guoyp</td>
+      <td>guoyuepeng</td>
+      <td>eBay</td>
+      <td>PMC(Chair)</td>
+    </tr>
+    <tr>
+      <td>Alex Lv</td>
+      <td>alexlv</td>
+      <td>alexatapache</td>
+      <td>Alibaba</td>
+      <td>PMC</td>
+    </tr>
+    <tr>
+      <td>Eugene Liu</td>
+      <td>liujin</td>
+      <td>toyboxman</td>
+      <td>VMWARE</td>
+      <td>PMC</td>
+    </tr>
+    <tr>
+      <td>Grant</td>
+      <td>xuexu</td>
+      <td>grant-xuexu</td>
+      <td>Ontario Institute for Cancer Research</td>
+      <td>PMC</td>
+    </tr>
+    <tr>
+      <td>He Wang</td>
+      <td>wanghe</td>
+      <td>whhe</td>
+      <td>NetEase(网易)</td>
+      <td>PMC</td>
+    </tr>
+    <tr>
+      <td>Henry Saputra</td>
+      <td>hsaputra</td>
+      <td>hsaputra</td>
+      <td>ASF</td>
+      <td>PMC(Mentor)</td>
+    </tr>
+    <tr>
+      <td>Jason Liao</td>
+      <td>jasonliao</td>
+      <td>jasonliaoxiaoge</td>
+      <td>Pingan Bank(平安银行)</td>
+      <td>PMC</td>
+    </tr>
+    <tr>
+      <td>John Liu</td>
+      <td>johnliu</td>
+      <td>john-liu</td>
+      <td>eBay</td>
+      <td>PMC</td>
+    </tr>
+    <tr>
+      <td>Juan Li</td>
+      <td>icesmartjuan</td>
+      <td>icesmartjuan</td>
+      <td>eBay</td>
+      <td>PMC</td>
+    </tr>
+    <tr>
+      <td>Kasper Sørensen</td>
+      <td>kaspersor</td>
+      <td>kaspersorensen</td>
+      <td>Satori Software</td>
+      <td>PMC(Mentor)</td>
+    </tr>
+    <tr>
+      <td>Kevin Yao</td>
+      <td>dyyao</td>
+      <td>ahutsunshine</td>
+      <td>Meituan(美团)</td>
+      <td>PMC</td>
+    </tr>
+    <tr>
+      <td>Lionel Liu</td>
+      <td>lionelliu</td>
+      <td>bhlx3lyx7</td>
+      <td>eBay</td>
+      <td>PMC</td>
+    </tr>
+    <tr>
+      <td>Luciano Resende</td>
+      <td>lresende</td>
+      <td>lresende</td>
+      <td>IBM</td>
+      <td>PMC(Mentor)</td>
+    </tr>
+    <tr>
+      <td>Nick Sokolov</td>
+      <td>nsokolov</td>
+      <td>chemikadze</td>
+      <td>Grid Dynamics</td>
+      <td>PMC</td>
+    </tr>
+    <tr>
+      <td>Shawn Sha</td>
+      <td>yosha</td>
+      <td>yosha1</td>
+      <td>JD(京东)</td>
+      <td>PMC</td>
+    </tr>
+    <tr>
+      <td>Vincent Zhao</td>
+      <td>wenzhao</td>
+      <td>vzhao</td>
+      <td>eBay</td>
+      <td>PMC</td>
+    </tr>
+    <tr>
+      <td>Yuqin Xuan</td>
+      <td>xuanyq</td>
+      <td>dodobel</td>
+      <td>Huawei(华为)</td>
+      <td>PMC</td>
+    </tr>
+    <tr>
+      <td>Wan Kun</td>
+      <td>wankun</td>
+      <td>wankunde</td>
+      <td>leyantech(乐言科技)</td>
+      <td>PMC</td>
+    </tr>
+  </tbody>
+</table>
+
+:ET
