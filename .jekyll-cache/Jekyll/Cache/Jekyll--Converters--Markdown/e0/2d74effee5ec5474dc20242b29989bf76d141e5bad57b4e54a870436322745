@@ -1,7 +1,0 @@
-I"0<h2 id="faq">FAQ</h2>
-
-<ul>
-  <li><strong>Where are the test cases for different measure dimensions?</strong></li>
-  <li>Please check <a href="https://github.com/apache/griffin/blob/master/measure/src/test/scala/org/apache/griffin/measure/job/BatchDQAppTest.scala">Data Quality test cases</a></li>
-</ul>
-:ET
