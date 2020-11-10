@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<head>
+  	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+ 	<title>Griffin - How to contribute</title>
+ 	<meta name="description" content="Apache Griffin - Big Data Quality Solution For Batch and Streaming">
+
+	<meta name="keywords" content="Griffin, Hadoop, Security, Real Time">
+	<meta name="author" content="eBay Inc.">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1">
+
+	<link rel="stylesheet" href="/css/animate.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="/css/misc.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/styles.css">
+  	<link rel="stylesheet" href="/css/main.css">
+  	<link rel="alternate" type="application/rss+xml" title="Griffin" href="http://griffin.apache.org/feed.xml" />
+  	<link rel="shortcut icon" href="/images/favicon.ico">
+
+  	<!-- Baidu Analytics Tracking-->
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?fedc55df2ea52777a679192e8f849ece";
+	  var s = document.getElementsByTagName("script")[0];
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
+	<!-- Google Analytics Tracking -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-68929805-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</head>
+
+<body>
+<!-- header start -->
+<div id="home_page">
+  <div class="topbar">
+    <div class="container">
+      <div class="row" >
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+              <a class="navbar-brand" href="/"><img src="/images/logo.png" height="44px" style="margin-top:-7px"></a> </div>
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </nav>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- header end -->
+<div class="container-fluid page-content">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <!-- sidebar -->
+      <div class="col-xs-6 col-sm-3" id="sidebar" role="navigation">
+        <ul class="nav" id="adminnav">
+        
+        <li class="heading">Getting Started</li>
+        
+          <li class="sidenavli  "><a href="/docs/quickstart.html" data-permalink="/docs/contribute.html" id="">Quick Start</a></li>
+        
+          <li class="sidenavli  "><a href="/docs/quickstart-cn.html" data-permalink="/docs/contribute.html" id="">Quick Start (Chinese Version)</a></li>
+        
+          <li class="sidenavli  "><a href="/docs/usecases.html" data-permalink="/docs/contribute.html" id="">Streaming Use Cases</a></li>
+        
+          <li class="sidenavli  "><a href="/docs/profiling.html" data-permalink="/docs/contribute.html" id="">Profiling Use Cases</a></li>
+        
+          <li class="sidenavli  "><a href="/docs/faq.html" data-permalink="/docs/contribute.html" id="">FAQ</a></li>
+        
+          <li class="sidenavli  "><a href="/docs/community.html" data-permalink="/docs/contribute.html" id="">Community</a></li>
+        
+          <li class="sidenavli  "><a href="/docs/conf.html" data-permalink="/docs/contribute.html" id="">Conference</a></li>
+        
+        <li class="divider"></li>
+      
+        <li class="heading">Development</li>
+        
+          <li class="sidenavli  current"><a href="/docs/contribute.html" data-permalink="/docs/contribute.html" id="">Contribution</a></li>
+        
+          <li class="sidenavli  "><a href="/docs/contributors.html" data-permalink="/docs/contribute.html" id="">Contributors</a></li>
+        
+        <li class="divider"></li>
+      
+        <li class="heading">Download</li>
+        
+          <li class="sidenavli  "><a href="/docs/latest.html" data-permalink="/docs/contribute.html" id="">Latest version</a></li>
+        
+          <li class="sidenavli  "><a href="/docs/download.html" data-permalink="/docs/contribute.html" id="">Archived</a></li>
+        
+        <li class="divider"></li>
+      
+        <li class="sidenavli">
+          <a href="mailto:dev@griffin.apache.org" target="_blank">Need Help?</a>
+        </li>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-9 page-main-content" style="margin-left: -15px" id="loadcontent">
+        <h1 class="page-header" style="margin-top: 0px">How to contribute</h1>
+        <h3 id="ask-questions">Ask questions</h3>
+<p>The Apache Griffin community is eager to help and to answer your questions. We have a dev/users mailing list.</p>
+
+<ul>
+  <li>dev@griffin.apache.org , <a href="mailto:dev-subscribe@griffin.apache.org">To subscribe dev list</a></li>
+  <li>users@griffin.apache.org , <a href="mailto:users-subscribe@griffin.apache.org">To subscribe users list</a></li>
+</ul>
+
+<h3 id="file-a-bug-report">File a bug report</h3>
+<p>Please let us know if you experienced a problem with Griffin and file a bug report. Open Apache Griffin’s JIRA and click on the blue Create button at the top. Please give detailed information about the problem you encountered and, if possible, add a description that helps to reproduce the problem.</p>
+
+<p><a href="https://issues.apache.org/jira/browse/GRIFFIN">https://issues.apache.org/jira/browse/GRIFFIN</a></p>
+
+<h3 id="propose-an-improvement-or-a-new-feature">Propose an improvement or a new feature</h3>
+<p>Our community is constantly looking for feedback to improve Apache Griffin. If you have an idea how to improve Griffin or have a new feature in mind that would be beneficial for Apache Griffin users, please open an issue in Apache Griffin’s JIRA. The improvement or new feature should be described in appropriate detail and include the scope and its requirements if possible.</p>
+
+<p>We recommend to first reach consensus with the community on whether a new feature is required and how to implement a new feature, before starting with the implementation.</p>
+
+<p><a href="https://cwiki.apache.org/confluence/display/GRIFFIN/Apache+Griffin">https://cwiki.apache.org/confluence/display/GRIFFIN/Apache+Griffin</a></p>
+
+<h3 id="help-others-and-join-the-discussions">Help others and join the discussions</h3>
+<p>Most communication in the Apache Griffin community happens on two mailing lists:</p>
+
+<p>The users mailing lists users@griffin.apache.org is the place where users of Apache Griffin ask questions and seek for help or advice. Joining the user list and helping other users is a very good way to contribute to Apache Griffin’s community.</p>
+
+<p>The dev mailing list dev@griffin.apache.org is the place where Griffin developers exchange ideas and discuss new features, upcoming releases, and the development process in general. If you are interested in contributing code to Apache Griffin, you should join this mailing list.</p>
+
+<p>You are welcome to subscribe to both mailing lists.</p>
+
+<h3 id="contributing-to-code">Contributing to Code</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># create jira ticket to specify what you want to do
+# https://issues.apache.org/jira/browse/GRIFFIN
+# Create one new branch for this task
+
+# first fork this to your own repo -- https://github.com/apache/griffin.git
+# then clone your own repo to your local workspace
+git clone https://github.com/{YOURNAME}/griffin.git
+
+# change code and push to your repository
+# please associate related JIRA TICK in your comments
+git commit -am "For task GRIFFIN-10 , blabla..."
+
+# Commit and send PR to us
+# Apache GRIFFIN PPMC will review and accept your pr as contributing.
+
+</code></pre></div></div>
+
+<h3 id="how-to-become-a-committer">How to become a committer</h3>
+
+<p>Committers are community members that have write access to the project’s repositories, i.e., they can modify the code, documentation, and website by themselves and also accept other contributions.</p>
+
+<p>There is no strict protocol for becoming a committer. Candidates for new committers are typically people that are active contributors and community members.</p>
+
+<p>Being an active community member means participating on mailing list discussions, helping to answer questions, verifying release candidates, being respectful towards others, and following the meritocratic principles of community management. Since the “Apache Way” has a strong focus on the project community, this part is very important.</p>
+
+<p>Of course, contributing code and documentation to the project is important as well. A good way to start is contributing improvements, new features, or bug fixes. You need to show that you take responsibility for the code that you contribute, add tests and documentation, and help maintaining it.</p>
+
+<p>Candidates for new committers are suggested by current committers or PMC members, and voted upon by the PMC.</p>
+
+<p>If you would like to become a committer, you should engage with the community and start contributing to Apache Griffin in any of the above ways. You might also want to talk to other committers and ask for their advice and guidance.</p>
+
+<h3 id="how-to-configure-committers-mail">How to configure committer’s mail</h3>
+
+<p>Committers are easy to use apache’s mail to communicate on the project’s plan, progress, issue etc. When you get your apache account, you should configure a popular mail system to take over it as apache mail system is plain-vanilla for usage.</p>
+
+<p>Here we give configuration guide below to help you take it easily. We use outlook system as sample.</p>
+
+<ul>
+  <li>
+    <p>Enable setting<br />
+<img src="/images/outlook-setting.png" alt="outlook_setting" /></p>
+  </li>
+  <li>
+    <p>Add apache mail account<br />
+<img src="/images/outlook-mail.png" alt="outlook_mail" /></p>
+  </li>
+</ul>
+
+<p>After those settings, you can use your outlook account to send/receive apache mail.</p>
+
+      </div><!--end of loadcontent-->
+    </div>
+    <!--end of centered content-->
+  </div>
+</div>
+<!--end of container-->
+
+
+<!-- footer start -->
+<div class="footerwrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="/images/incubator_feather_egg_logo.png" height="60">
+            </div>
+            <div class="col-md-9">
+                <div style="margin-left:auto; margin-right:auto; text-align:center;font-size:12px;">
+                    <div>
+                        Apache Griffin is an effort undergoing incubation at The Apache Software Foundation (ASF), sponsored by the Apache Incubator. Incubation is required of all newly accepted projects until a further review indicates that the infrastructure, communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. While incubation status is not necessarily a reflection of the completeness or stability of the code, it does indicate that the project has yet to be fully endorsed by the ASF.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="padding-top:10px;">
+            Copyright © 2018 The Apache Software Foundation, Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br>
+			Apache Griffin, Griffin, Apache, the Apache feather logo and the Apache Griffin logo are trademarks of The Apache Software Foundation.
+        </div>
+		<div class="row text-center" style="padding-top:10px;">
+			<a href="https://www.apache.org/events/current-event.html">
+				<img src="https://www.apache.org/events/current-event-234x60.png" alt="ASF Current Event">
+			</a>
+		</div>
+    </div>
+</div>
+<!-- footer end -->
+
+<!-- JavaScripts -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+
+
+</body>
+</html>
