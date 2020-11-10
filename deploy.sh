@@ -50,7 +50,7 @@ git commit -m "$message" > /dev/null 2>&1
 rm -r ~/$tmp_dir
 
 # Push latest SITE to server
-git push -u origin $SITE > /dev/null 2>&1
+git push -u origin $SITE -f > /dev/null 2>&1
 if [ $? = 0 ]; then
   echo "Push $SITE successful"
 else
