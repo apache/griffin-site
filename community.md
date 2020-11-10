@@ -24,6 +24,7 @@ permalink: /docs/community.html
 
 | Name | Apacheid | Githubid | Org | Role |
 |------------------------------|--------------|-------------------------|---------------------------------------|-------------|
+| Liang Shao | liangshao | liangshao | eBay | PMC |
 | William Guo | guoyp | guoyuepeng | eBay | PMC(Chair) |
 | Alex Lv | alexlv | alexatapache | Alibaba | PMC |
 | Eugene Liu | liujin | toyboxman | VMWARE | PMC |
@@ -35,7 +36,6 @@ permalink: /docs/community.html
 | Juan Li | icesmartjuan | icesmartjuan | eBay | PMC |
 | Kasper Sørensen | kaspersor | kaspersorensen | Satori Software | PMC(Mentor) |
 | Kevin Yao | dyyao | ahutsunshine | Meituan(美团) | PMC |
-| Liang Shao | liangshao | liangshao | eBay | PMC |
 | Lionel Liu | lionelliu | bhlx3lyx7 | eBay | PMC |
 | Luciano Resende | lresende | lresende | IBM | PMC(Mentor) |
 | Nick Sokolov | nsokolov | chemikadze | Grid Dynamics | PMC |
