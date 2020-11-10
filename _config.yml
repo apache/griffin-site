@@ -1,0 +1,62 @@
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to you under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+# Site settings
+title: Griffin
+email: dev@griffin.apache.org
+description: Apache Griffin - Big Data Quality Solution For Batch and Streaming
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://griffin.apache.org" # the base hostname & protocol for your site
+
+
+# Build settings
+markdown: kramdown
+permalink: date
+
+#host: 10.254.190.228
+#port: 4000
+
+documentations:
+  - category: Getting Started
+    links:
+      - title: Quick Start
+        url: /docs/quickstart.html
+      - title: Quick Start (Chinese Version)
+        url: /docs/quickstart-cn.html
+      - title: Streaming Use Cases
+        url: /docs/usecases.html
+      - title: Profiling Use Cases
+        url: /docs/profiling.html
+      - title: FAQ
+        url: /docs/faq.html
+      - title: Community
+        url: /docs/community.html
+      - title: Conference
+        url: /docs/conf.html
+  - category: Development
+    links:
+      - title: Contribution
+        url: /docs/contribute.html
+      - title: Contributors
+        url: /docs/contributors.html
+  - category: Download
+    links:
+      - title: Latest version
+        url: /docs/latest.html
+      - title: Archived
+        url: /docs/download.html
+
