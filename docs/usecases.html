@@ -41,7 +41,6 @@ under the License.
   	<link rel="stylesheet" href="/css/main.css">
   	<link rel="alternate" type="application/rss+xml" title="Griffin" href="http://griffin.apache.org/feed.xml" />
   	<link rel="shortcut icon" href="/images/favicon.ico">
-
 </head>
 
 <body>
@@ -118,7 +117,7 @@ under the License.
 <p>Say we have two streaming data sets in different kafka topics(source, target), we need to know what is the data quality for target data set, based on source data set.</p>
 
 <p>For simplicity, suppose both two topics’ data are json string which would be like this:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{"id": 1, "name": "Apple", "color": "red", "time": "2018-09-12_06:00:00"}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{"id": 1, "name": "Apple", "color": "red", "time": "2018-09-12_06:00:00"}
 {"id": 2, "name": "Banana", "color": "yellow", "time": "2018-09-12_06:01:00"}
 ...
 </code></pre></div></div>
@@ -137,17 +136,17 @@ under the License.
 <ol>
   <li>Download Apache Griffin source package <a href="https://www.apache.org/dist/griffin/0.4.0/">here</a>.</li>
   <li>Unzip the source package.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>unzip griffin-0.4.0-source-release.zip
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>unzip griffin-0.4.0-source-release.zip
 cd griffin-0.4.0-source-release
 </code></pre></div>    </div>
   </li>
   <li>Build Apache Griffin jars.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mvn clean install
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mvn clean install
 </code></pre></div>    </div>
 
     <p>Move the built apache griffin measure jar to your work path.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv measure/target/measure-0.4.0.jar &lt;work path&gt;/griffin-measure.jar
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv measure/target/measure-0.4.0.jar &lt;work path&gt;/griffin-measure.jar
 </code></pre></div>    </div>
   </li>
 </ol>
@@ -155,23 +154,23 @@ cd griffin-0.4.0-source-release
 <h2 id="data-preparation">Data Preparation</h2>
 
 <p>For our quick start, We will create two kafka topics(source, target) and generate data in json string format for them minutely.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># create topics
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># create topics
 # Note: it just works for kafka 0.8
 kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic source
 kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic target
 </code></pre></div></div>
 <p>The data would be generated like this:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{"id": 1, "name": "Apple", "color": "red", "time": "2018-09-12_06:00:00"}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{"id": 1, "name": "Apple", "color": "red", "time": "2018-09-12_06:00:00"}
 {"id": 2, "name": "Banana", "color": "yellow", "time": "2018-09-12_06:01:00"}
 </code></pre></div></div>
 <p>For topic source and target, there could be some different items between each other. 
-You can download <a href="/data/streaming">demo data</a> and execute <code class="highlighter-rouge">./streaming-data.sh</code> to generate json string data file and produce them into kafka topics minutely.</p>
+You can download <a href="/data/streaming">demo data</a> and execute <code class="language-plaintext highlighter-rouge">./streaming-data.sh</code> to generate json string data file and produce them into kafka topics minutely.</p>
 
 <h2 id="define-data-quality-measure">Define data quality measure</h2>
 
 <h4 id="apache-griffin-env-configuration">Apache Griffin env configuration</h4>
 <p>The environment config file: env.json</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "spark": {
     "log.level": "WARN",
     "checkpoint.dir": "hdfs:///griffin/checkpoint",
@@ -227,7 +226,7 @@ You can download <a href="/data/streaming">demo data</a> and execute <code class
 <h4 id="define-griffin-data-quality">Define griffin data quality</h4>
 <p>The DQ config file: dq.json</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "name": "streaming_accu",
   "process.type": "streaming",
   "data.sources": [
@@ -335,14 +334,14 @@ You can download <a href="/data/streaming">demo data</a> and execute <code class
 <h2 id="measure-data-quality">Measure data quality</h2>
 <p>Submit the measure job to Spark, with config file paths as parameters.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit --class org.apache.griffin.measure.Application --master yarn --deploy-mode client --queue default \
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit --class org.apache.griffin.measure.Application --master yarn --deploy-mode client --queue default \
 --driver-memory 1g --executor-memory 1g --num-executors 3 \
 &lt;path&gt;/griffin-measure.jar \
 &lt;path&gt;/env.json &lt;path&gt;/dq.json
 </code></pre></div></div>
 
 <h2 id="report-data-quality-metrics">Report data quality metrics</h2>
-<p>Then you can get the calculation log in console, when the job runs, you can get the result metrics printed minutely. The related results will also be saved in hdfs: <code class="highlighter-rouge">hdfs:///griffin/persist/&lt;job name&gt;/</code>, listing in different directoies named by calculate timestamps.</p>
+<p>Then you can get the calculation log in console, when the job runs, you can get the result metrics printed minutely. The related results will also be saved in hdfs: <code class="language-plaintext highlighter-rouge">hdfs:///griffin/persist/&lt;job name&gt;/</code>, listing in different directoies named by calculate timestamps.</p>
 
 <h2 id="refine-data-quality-report">Refine Data Quality report</h2>
 <p>Depends on your business, you might need to refine your data quality measure further till your are satisfied.</p>
@@ -364,31 +363,23 @@ You can download <a href="/data/streaming">demo data</a> and execute <code class
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <img src="/images/incubator_feather_egg_logo.png" height="60">
+                <a href="https://www.apache.org/events/current-event.html">
+                    <img src="https://www.apache.org/events/current-event-234x60.png" alt="ASF Current Event">
+                </a>
             </div>
             <div class="col-md-9">
-                <div style="margin-left:auto; margin-right:auto; text-align:center;font-size:12px;">
-                    <div>
-                        Apache Griffin is an effort undergoing incubation at The Apache Software Foundation (ASF), sponsored by the Apache Incubator. Incubation is required of all newly accepted projects until a further review indicates that the infrastructure, communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. While incubation status is not necessarily a reflection of the completeness or stability of the code, it does indicate that the project has yet to be fully endorsed by the ASF.
-                    </div>
+                <div>
+                    Copyright © 2018 The Apache Software Foundation, Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br>
+                    Apache Griffin, Griffin, Apache, the Apache feather logo and the Apache Griffin logo are trademarks of The Apache Software Foundation.
                 </div>
             </div>
         </div>
-        <div class="row" style="padding-top:10px;">
-            Copyright © 2018 The Apache Software Foundation, Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br>
-			Apache Griffin, Griffin, Apache, the Apache feather logo and the Apache Griffin logo are trademarks of The Apache Software Foundation.
-        </div>
-		<div class="row text-center" style="padding-top:10px;">
-			<a href="https://www.apache.org/events/current-event.html">
-				<img src="https://www.apache.org/events/current-event-234x60.png" alt="ASF Current Event">
-			</a>
-		</div>
     </div>
 </div>
 <!-- footer end -->
 
 <!-- JavaScripts -->
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="/js/jquery-2.2.4.min.js"></script>
 
 
 

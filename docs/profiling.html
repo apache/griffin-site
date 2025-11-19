@@ -41,7 +41,6 @@ under the License.
   	<link rel="stylesheet" href="/css/main.css">
   	<link rel="alternate" type="application/rss+xml" title="Griffin" href="http://griffin.apache.org/feed.xml" />
   	<link rel="shortcut icon" href="/images/favicon.ico">
-
 </head>
 
 <body>
@@ -118,7 +117,7 @@ under the License.
 <p>Say we have one data set(demo_src), partitioned by hour, we want to know what is the data like for each hour.</p>
 
 <p>For simplicity, suppose both two data set have the same schema as this:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>id                      bigint                                      
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>id                      bigint                                      
 age                     int                                         
 desc                    string                                      
 dt                      string                                      
@@ -143,17 +142,17 @@ hour                    string
 <ol>
   <li>Download Apache Griffin source package <a href="https://www.apache.org/dist/griffin/0.4.0/">here</a>.</li>
   <li>Unzip the source package.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>unzip griffin-0.4.0-source-release.zip
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>unzip griffin-0.4.0-source-release.zip
 cd griffin-0.4.0-source-release
 </code></pre></div>    </div>
   </li>
   <li>Build Apache Griffin jars.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mvn clean install
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mvn clean install
 </code></pre></div>    </div>
 
     <p>Move the built apache griffin measure jar to your work path.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv measure/target/measure-0.4.0.jar &lt;work path&gt;/griffin-measure.jar
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv measure/target/measure-0.4.0.jar &lt;work path&gt;/griffin-measure.jar
 </code></pre></div>    </div>
   </li>
 </ol>
@@ -161,7 +160,7 @@ cd griffin-0.4.0-source-release
 <h2 id="data-preparation">Data Preparation</h2>
 
 <p>For our quick start, We will generate a hive table demo_src.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--create hive tables here. hql script
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--create hive tables here. hql script
 --Note: replace hdfs location with your own path
 CREATE EXTERNAL TABLE `demo_src`(
   `id` bigint,
@@ -176,22 +175,22 @@ LOCATION
   'hdfs:///griffin/data/batch/demo_src';
 </code></pre></div></div>
 <p>The data could be generated this:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1|18|student
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1|18|student
 2|23|engineer
 3|42|cook
 ...
 </code></pre></div></div>
-<p>You can download <a href="/data/batch">demo data</a> and execute <code class="highlighter-rouge">./gen_demo_data.sh</code> to get the data source file.
+<p>You can download <a href="/data/batch">demo data</a> and execute <code class="language-plaintext highlighter-rouge">./gen_demo_data.sh</code> to get the data source file.
 Then we will load data into hive table for every hour.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LOAD DATA LOCAL INPATH 'demo_src' INTO TABLE demo_src PARTITION (dt='20180912',hour='09');
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LOAD DATA LOCAL INPATH 'demo_src' INTO TABLE demo_src PARTITION (dt='20180912',hour='09');
 </code></pre></div></div>
-<p>Or you can just execute <code class="highlighter-rouge">./gen-hive-data.sh</code> in the downloaded directory above, to generate and load data into the tables hourly.</p>
+<p>Or you can just execute <code class="language-plaintext highlighter-rouge">./gen-hive-data.sh</code> in the downloaded directory above, to generate and load data into the tables hourly.</p>
 
 <h2 id="define-data-quality-measure">Define data quality measure</h2>
 
 <h4 id="apache-griffin-env-configuration">Apache Griffin env configuration</h4>
 <p>The environment config file: env.json</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "spark": {
     "log.level": "WARN"
   },
@@ -219,7 +218,7 @@ Then we will load data into hive table for every hour.</p>
 <h4 id="define-apache-griffin-data-quality">Define Apache Griffin data quality</h4>
 <p>The DQ config file: dq.json</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "name": "batch_prof",
   "process.type": "batch",
   "data.sources": [
@@ -261,14 +260,14 @@ Then we will load data into hive table for every hour.</p>
 <h2 id="measure-data-quality">Measure data quality</h2>
 <p>Submit the measure job to Spark, with config file paths as parameters.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit --class org.apache.griffin.measure.Application --master yarn --deploy-mode client --queue default \
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit --class org.apache.griffin.measure.Application --master yarn --deploy-mode client --queue default \
 --driver-memory 1g --executor-memory 1g --num-executors 2 \
 &lt;path&gt;/griffin-measure.jar \
 &lt;path&gt;/env.json &lt;path&gt;/dq.json
 </code></pre></div></div>
 
 <h2 id="report-data-quality-metrics">Report data quality metrics</h2>
-<p>Then you can get the calculation log in console, after the job finishes, you can get the result metrics printed. The metrics will also be saved in hdfs: <code class="highlighter-rouge">hdfs:///griffin/persist/&lt;job name&gt;/&lt;timestamp&gt;/_METRICS</code>.</p>
+<p>Then you can get the calculation log in console, after the job finishes, you can get the result metrics printed. The metrics will also be saved in hdfs: <code class="language-plaintext highlighter-rouge">hdfs:///griffin/persist/&lt;job name&gt;/&lt;timestamp&gt;/_METRICS</code>.</p>
 
 <h2 id="refine-data-quality-report">Refine Data Quality report</h2>
 <p>Depends on your business, you might need to refine your data quality measure further till your are satisfied.</p>
@@ -289,31 +288,23 @@ Then we will load data into hive table for every hour.</p>
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <img src="/images/incubator_feather_egg_logo.png" height="60">
+                <a href="https://www.apache.org/events/current-event.html">
+                    <img src="https://www.apache.org/events/current-event-234x60.png" alt="ASF Current Event">
+                </a>
             </div>
             <div class="col-md-9">
-                <div style="margin-left:auto; margin-right:auto; text-align:center;font-size:12px;">
-                    <div>
-                        Apache Griffin is an effort undergoing incubation at The Apache Software Foundation (ASF), sponsored by the Apache Incubator. Incubation is required of all newly accepted projects until a further review indicates that the infrastructure, communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. While incubation status is not necessarily a reflection of the completeness or stability of the code, it does indicate that the project has yet to be fully endorsed by the ASF.
-                    </div>
+                <div>
+                    Copyright © 2018 The Apache Software Foundation, Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br>
+                    Apache Griffin, Griffin, Apache, the Apache feather logo and the Apache Griffin logo are trademarks of The Apache Software Foundation.
                 </div>
             </div>
         </div>
-        <div class="row" style="padding-top:10px;">
-            Copyright © 2018 The Apache Software Foundation, Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br>
-			Apache Griffin, Griffin, Apache, the Apache feather logo and the Apache Griffin logo are trademarks of The Apache Software Foundation.
-        </div>
-		<div class="row text-center" style="padding-top:10px;">
-			<a href="https://www.apache.org/events/current-event.html">
-				<img src="https://www.apache.org/events/current-event-234x60.png" alt="ASF Current Event">
-			</a>
-		</div>
     </div>
 </div>
 <!-- footer end -->
 
 <!-- JavaScripts -->
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="/js/jquery-2.2.4.min.js"></script>
 
 
 

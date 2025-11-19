@@ -41,7 +41,6 @@ under the License.
   	<link rel="stylesheet" href="/css/main.css">
   	<link rel="alternate" type="application/rss+xml" title="Griffin" href="http://griffin.apache.org/feed.xml" />
   	<link rel="shortcut icon" href="/images/favicon.ico">
-
 </head>
 
 <body>
@@ -154,7 +153,7 @@ under the License.
 
 <p>在MySQL中创建数据库quartz，然后执行<a href="https://github.com/apache/griffin/blob/master/service/src/main/resources/Init_quartz_mysql_innodb.sql">Init_quartz_mysql_innodb.sql</a>脚本初始化表信息：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql -u &lt;username&gt; -p &lt;password&gt; &lt; Init_quartz_mysql_innodb.sql
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql -u &lt;username&gt; -p &lt;password&gt; &lt; Init_quartz_mysql_innodb.sql
 </code></pre></div></div>
 
 <p>2、Hadoop和Hive：</p>
@@ -163,7 +162,7 @@ under the License.
 
 <p>在Hadoop服务器上创建/home/spark_conf目录，并将Hive的配置文件hive-site.xml上传到该目录下：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#创建/home/spark_conf目录
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#创建/home/spark_conf目录
 hadoop fs -mkdir -p /home/spark_conf
 #上传hive-site.xml
 hadoop fs -put hive-site.xml /home/spark_conf/
@@ -171,22 +170,22 @@ hadoop fs -put hive-site.xml /home/spark_conf/
 
 <p>3、设置环境变量：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
-<span class="nb">export </span><span class="nv">JAVA_HOME</span><span class="o">=</span>/data/jdk1.8.0_192
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+export JAVA_HOME=/data/jdk1.8.0_192
 
-<span class="c">#spark目录</span>
-<span class="nb">export </span><span class="nv">SPARK_HOME</span><span class="o">=</span>/usr/data/spark-2.1.1-bin-2.6.3
-<span class="c">#livy命令目录</span>
-<span class="nb">export </span><span class="nv">LIVY_HOME</span><span class="o">=</span>/usr/data/livy/bin
-<span class="c">#hadoop配置文件目录</span>
-<span class="nb">export </span><span class="nv">HADOOP_CONF_DIR</span><span class="o">=</span>/usr/data/conf
+#spark目录
+export SPARK_HOME=/usr/data/spark-2.1.1-bin-2.6.3
+#livy命令目录
+export LIVY_HOME=/usr/data/livy/bin
+#hadoop配置文件目录
+export HADOOP_CONF_DIR=/usr/data/conf
 </code></pre></div></div>
 
 <p>4、Livy配置：</p>
 
 <p>更新livy/conf下的livy.conf配置文件：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>livy.server.host = 127.0.0.1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>livy.server.host = 127.0.0.1
 livy.spark.master = yarn
 livy.spark.deployMode = cluster
 livy.repl.enable-hive-context = true
@@ -194,14 +193,14 @@ livy.repl.enable-hive-context = true
 
 <p>启动livy：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>livy-server start
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>livy-server start
 </code></pre></div></div>
 
 <p>5、Elasticsearch配置：</p>
 
 <p>在ES里创建griffin索引：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -XPUT http://es:9200/griffin -d '
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -XPUT http://es:9200/griffin -d '
 {
     "aliases": {},
     "mappings": {
@@ -244,7 +243,7 @@ livy.repl.enable-hive-context = true
 
 <p>1、service/src/main/resources/application.properties：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Apache Griffin应用名称
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Apache Griffin应用名称
 spring.application.name=griffin_service
 # MySQL数据库配置信息
 spring.datasource.url=jdbc:mysql://10.xxx.xx.xxx:3306/griffin_quartz?useSSL=false
@@ -299,7 +298,7 @@ internal.event.listeners=GriffinJobEventHook
 
 <p>2、service/src/main/resources/quartz.properties</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
 # distributed with this work for additional information
@@ -334,7 +333,7 @@ org.quartz.jobStore.clusterCheckinInterval=20000
 
 <p>3、service/src/main/resources/sparkProperties.json：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "file": "hdfs:///griffin/griffin-measure.jar",
   "className": "org.apache.griffin.measure.Application",
   "name": "griffin",
@@ -353,7 +352,7 @@ org.quartz.jobStore.clusterCheckinInterval=20000
 
 <p>4、service/src/main/resources/env/env_batch.json：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "spark": {
     "log.level": "INFO"
   },
@@ -388,14 +387,14 @@ org.quartz.jobStore.clusterCheckinInterval=20000
 
 <p>配置文件修改好后，在idea里的terminal里执行如下maven命令进行编译打包：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mvn -Dmaven.test.skip=true clean install
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mvn -Dmaven.test.skip=true clean install
 </code></pre></div></div>
 
 <p>命令执行完成后，会在service和measure模块的target目录下分别看到service-0.4.0.jar和measure-0.4.0.jar两个jar，将这两个jar分别拷贝到服务器目录下。这两个jar的使用方式如下：</p>
 
 <p>1、使用如下命令将measure-0.4.0.jar这个jar上传到HDFS的/griffin文件目录里：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#改变jar名称
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#改变jar名称
 mv measure-0.4.0.jar griffin-measure.jar
 #上传griffin-measure.jar到HDFS文件目录里
 hadoop fs -put measure-0.4.0.jar /griffin/
@@ -405,12 +404,12 @@ hadoop fs -put measure-0.4.0.jar /griffin/
 
 <p>2、运行service-0.4.0.jar，启动Griffin管理后台：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nohup java -jar service-0.4.0.jar&gt;service.out 2&gt;&amp;1 &amp;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nohup java -jar service-0.4.0.jar&gt;service.out 2&gt;&amp;1 &amp;
 </code></pre></div></div>
 
 <p>几秒钟后，我们可以访问Apache Griffin的默认UI(默认情况下，spring boot的端口是8080)。</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://IP:8080
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://IP:8080
 </code></pre></div></div>
 
 <p>UI操作文档链接：<a href="https://github.com/apache/griffin/blob/master/griffin-doc/ui/user-guide.md">Apache Griffin User Guide</a>。通过UI操作界面，我们可以创建自己的统计任务，部分结果展示界面如下：</p>
@@ -421,7 +420,7 @@ hadoop fs -put measure-0.4.0.jar /griffin/
 
 <p>1、在hive里创建表demo_src和demo_tgt：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--create hive tables here. hql script
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--create hive tables here. hql script
 --Note: replace hdfs location with your own path
 CREATE EXTERNAL TABLE `demo_src`(
   `id` bigint,
@@ -453,7 +452,7 @@ LOCATION
 
 <p>从<a href="http://griffin.apache.org/data/batch/">http://griffin.apache.org/data/batch/</a>地址下载所有文件到Hadoop服务器上，然后使用如下命令执行gen-hive-data.sh脚本：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nohup ./gen-hive-data.sh&gt;gen.out 2&gt;&amp;1 &amp;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nohup ./gen-hive-data.sh&gt;gen.out 2&gt;&amp;1 &amp;
 </code></pre></div></div>
 
 <p>注意观察gen.out日志文件，如果有错误，视情况进行调整。这里我的测试环境Hadoop和Hive安装在同一台服务器上，因此直接运行脚本。</p>
@@ -469,66 +468,66 @@ LOCATION
 
 <p>解决办法：给脚本中增加hadoop fs -mkdir创建目录操作，修改完后如下：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
 
-<span class="c">#create table</span>
-hive <span class="nt">-f</span> create-table.hql
-<span class="nb">echo</span> <span class="s2">"create table done"</span>
+#create table
+hive -f create-table.hql
+echo "create table done"
 
-<span class="c">#current hour</span>
-<span class="nb">sudo</span> ./gen_demo_data.sh
-<span class="nv">cur_date</span><span class="o">=</span><span class="sb">`</span>date +%Y%m%d%H<span class="sb">`</span>
-<span class="nv">dt</span><span class="o">=</span><span class="k">${</span><span class="nv">cur_date</span>:0:8<span class="k">}</span>
-<span class="nv">hour</span><span class="o">=</span><span class="k">${</span><span class="nv">cur_date</span>:8:2<span class="k">}</span>
-<span class="nv">partition_date</span><span class="o">=</span><span class="s2">"dt='</span><span class="nv">$dt</span><span class="s2">',hour='</span><span class="nv">$hour</span><span class="s2">'"</span>
-sed s/PARTITION_DATE/<span class="nv">$partition_date</span>/ ./insert-data.hql.template <span class="o">&gt;</span> insert-data.hql
-hive <span class="nt">-f</span> insert-data.hql
-<span class="nv">src_done_path</span><span class="o">=</span>/griffin/data/batch/demo_src/dt<span class="o">=</span><span class="k">${</span><span class="nv">dt</span><span class="k">}</span>/hour<span class="o">=</span><span class="k">${</span><span class="nv">hour</span><span class="k">}</span>/_DONE
-<span class="nv">tgt_done_path</span><span class="o">=</span>/griffin/data/batch/demo_tgt/dt<span class="o">=</span><span class="k">${</span><span class="nv">dt</span><span class="k">}</span>/hour<span class="o">=</span><span class="k">${</span><span class="nv">hour</span><span class="k">}</span>/_DONE
-hadoop fs <span class="nt">-mkdir</span> <span class="nt">-p</span> /griffin/data/batch/demo_src/dt<span class="o">=</span><span class="k">${</span><span class="nv">dt</span><span class="k">}</span>/hour<span class="o">=</span><span class="k">${</span><span class="nv">hour</span><span class="k">}</span>
-hadoop fs <span class="nt">-mkdir</span> <span class="nt">-p</span> /griffin/data/batch/demo_tgt/dt<span class="o">=</span><span class="k">${</span><span class="nv">dt</span><span class="k">}</span>/hour<span class="o">=</span><span class="k">${</span><span class="nv">hour</span><span class="k">}</span>
-hadoop fs <span class="nt">-touchz</span> <span class="k">${</span><span class="nv">src_done_path</span><span class="k">}</span>
-hadoop fs <span class="nt">-touchz</span> <span class="k">${</span><span class="nv">tgt_done_path</span><span class="k">}</span>
-<span class="nb">echo</span> <span class="s2">"insert data [</span><span class="nv">$partition_date</span><span class="s2">] done"</span>
+#current hour
+sudo ./gen_demo_data.sh
+cur_date=`date +%Y%m%d%H`
+dt=${cur_date:0:8}
+hour=${cur_date:8:2}
+partition_date="dt='$dt',hour='$hour'"
+sed s/PARTITION_DATE/$partition_date/ ./insert-data.hql.template &gt; insert-data.hql
+hive -f insert-data.hql
+src_done_path=/griffin/data/batch/demo_src/dt=${dt}/hour=${hour}/_DONE
+tgt_done_path=/griffin/data/batch/demo_tgt/dt=${dt}/hour=${hour}/_DONE
+hadoop fs -mkdir -p /griffin/data/batch/demo_src/dt=${dt}/hour=${hour}
+hadoop fs -mkdir -p /griffin/data/batch/demo_tgt/dt=${dt}/hour=${hour}
+hadoop fs -touchz ${src_done_path}
+hadoop fs -touchz ${tgt_done_path}
+echo "insert data [$partition_date] done"
 
-<span class="c">#last hour</span>
-<span class="nb">sudo</span> ./gen_demo_data.sh
-<span class="nv">cur_date</span><span class="o">=</span><span class="sb">`</span>date <span class="nt">-d</span> <span class="s1">'1 hour ago'</span> +%Y%m%d%H<span class="sb">`</span>
-<span class="nv">dt</span><span class="o">=</span><span class="k">${</span><span class="nv">cur_date</span>:0:8<span class="k">}</span>
-<span class="nv">hour</span><span class="o">=</span><span class="k">${</span><span class="nv">cur_date</span>:8:2<span class="k">}</span>
-<span class="nv">partition_date</span><span class="o">=</span><span class="s2">"dt='</span><span class="nv">$dt</span><span class="s2">',hour='</span><span class="nv">$hour</span><span class="s2">'"</span>
-sed s/PARTITION_DATE/<span class="nv">$partition_date</span>/ ./insert-data.hql.template <span class="o">&gt;</span> insert-data.hql
-hive <span class="nt">-f</span> insert-data.hql
-<span class="nv">src_done_path</span><span class="o">=</span>/griffin/data/batch/demo_src/dt<span class="o">=</span><span class="k">${</span><span class="nv">dt</span><span class="k">}</span>/hour<span class="o">=</span><span class="k">${</span><span class="nv">hour</span><span class="k">}</span>/_DONE
-<span class="nv">tgt_done_path</span><span class="o">=</span>/griffin/data/batch/demo_tgt/dt<span class="o">=</span><span class="k">${</span><span class="nv">dt</span><span class="k">}</span>/hour<span class="o">=</span><span class="k">${</span><span class="nv">hour</span><span class="k">}</span>/_DONE
-hadoop fs <span class="nt">-mkdir</span> <span class="nt">-p</span> /griffin/data/batch/demo_src/dt<span class="o">=</span><span class="k">${</span><span class="nv">dt</span><span class="k">}</span>/hour<span class="o">=</span><span class="k">${</span><span class="nv">hour</span><span class="k">}</span>
-hadoop fs <span class="nt">-mkdir</span> <span class="nt">-p</span> /griffin/data/batch/demo_tgt/dt<span class="o">=</span><span class="k">${</span><span class="nv">dt</span><span class="k">}</span>/hour<span class="o">=</span><span class="k">${</span><span class="nv">hour</span><span class="k">}</span>
-hadoop fs <span class="nt">-touchz</span> <span class="k">${</span><span class="nv">src_done_path</span><span class="k">}</span>
-hadoop fs <span class="nt">-touchz</span> <span class="k">${</span><span class="nv">tgt_done_path</span><span class="k">}</span>
-<span class="nb">echo</span> <span class="s2">"insert data [</span><span class="nv">$partition_date</span><span class="s2">] done"</span>
+#last hour
+sudo ./gen_demo_data.sh
+cur_date=`date -d '1 hour ago' +%Y%m%d%H`
+dt=${cur_date:0:8}
+hour=${cur_date:8:2}
+partition_date="dt='$dt',hour='$hour'"
+sed s/PARTITION_DATE/$partition_date/ ./insert-data.hql.template &gt; insert-data.hql
+hive -f insert-data.hql
+src_done_path=/griffin/data/batch/demo_src/dt=${dt}/hour=${hour}/_DONE
+tgt_done_path=/griffin/data/batch/demo_tgt/dt=${dt}/hour=${hour}/_DONE
+hadoop fs -mkdir -p /griffin/data/batch/demo_src/dt=${dt}/hour=${hour}
+hadoop fs -mkdir -p /griffin/data/batch/demo_tgt/dt=${dt}/hour=${hour}
+hadoop fs -touchz ${src_done_path}
+hadoop fs -touchz ${tgt_done_path}
+echo "insert data [$partition_date] done"
 
-<span class="c">#next hours</span>
-<span class="nb">set</span> +e
-<span class="k">while </span><span class="nb">true
-</span><span class="k">do
-  </span><span class="nb">sudo</span> ./gen_demo_data.sh
-  <span class="nv">cur_date</span><span class="o">=</span><span class="sb">`</span>date +%Y%m%d%H<span class="sb">`</span>
-  <span class="nv">next_date</span><span class="o">=</span><span class="sb">`</span>date <span class="nt">-d</span> <span class="s2">"+1hour"</span> <span class="s1">'+%Y%m%d%H'</span><span class="sb">`</span>
-  <span class="nv">dt</span><span class="o">=</span><span class="k">${</span><span class="nv">next_date</span>:0:8<span class="k">}</span>
-  <span class="nv">hour</span><span class="o">=</span><span class="k">${</span><span class="nv">next_date</span>:8:2<span class="k">}</span>
-  <span class="nv">partition_date</span><span class="o">=</span><span class="s2">"dt='</span><span class="nv">$dt</span><span class="s2">',hour='</span><span class="nv">$hour</span><span class="s2">'"</span>
-  sed s/PARTITION_DATE/<span class="nv">$partition_date</span>/ ./insert-data.hql.template <span class="o">&gt;</span> insert-data.hql
-  hive <span class="nt">-f</span> insert-data.hql
-  <span class="nv">src_done_path</span><span class="o">=</span>/griffin/data/batch/demo_src/dt<span class="o">=</span><span class="k">${</span><span class="nv">dt</span><span class="k">}</span>/hour<span class="o">=</span><span class="k">${</span><span class="nv">hour</span><span class="k">}</span>/_DONE
-  <span class="nv">tgt_done_path</span><span class="o">=</span>/griffin/data/batch/demo_tgt/dt<span class="o">=</span><span class="k">${</span><span class="nv">dt</span><span class="k">}</span>/hour<span class="o">=</span><span class="k">${</span><span class="nv">hour</span><span class="k">}</span>/_DONE
-  hadoop fs <span class="nt">-mkdir</span> <span class="nt">-p</span> /griffin/data/batch/demo_src/dt<span class="o">=</span><span class="k">${</span><span class="nv">dt</span><span class="k">}</span>/hour<span class="o">=</span><span class="k">${</span><span class="nv">hour</span><span class="k">}</span>
-  hadoop fs <span class="nt">-mkdir</span> <span class="nt">-p</span> /griffin/data/batch/demo_tgt/dt<span class="o">=</span><span class="k">${</span><span class="nv">dt</span><span class="k">}</span>/hour<span class="o">=</span><span class="k">${</span><span class="nv">hour</span><span class="k">}</span>
-  hadoop fs <span class="nt">-touchz</span> <span class="k">${</span><span class="nv">src_done_path</span><span class="k">}</span>
-  hadoop fs <span class="nt">-touchz</span> <span class="k">${</span><span class="nv">tgt_done_path</span><span class="k">}</span>
-  <span class="nb">echo</span> <span class="s2">"insert data [</span><span class="nv">$partition_date</span><span class="s2">] done"</span>
+#next hours
+set +e
+while true
+do
+  sudo ./gen_demo_data.sh
+  cur_date=`date +%Y%m%d%H`
+  next_date=`date -d "+1hour" '+%Y%m%d%H'`
+  dt=${next_date:0:8}
+  hour=${next_date:8:2}
+  partition_date="dt='$dt',hour='$hour'"
+  sed s/PARTITION_DATE/$partition_date/ ./insert-data.hql.template &gt; insert-data.hql
+  hive -f insert-data.hql
+  src_done_path=/griffin/data/batch/demo_src/dt=${dt}/hour=${hour}/_DONE
+  tgt_done_path=/griffin/data/batch/demo_tgt/dt=${dt}/hour=${hour}/_DONE
+  hadoop fs -mkdir -p /griffin/data/batch/demo_src/dt=${dt}/hour=${hour}
+  hadoop fs -mkdir -p /griffin/data/batch/demo_tgt/dt=${dt}/hour=${hour}
+  hadoop fs -touchz ${src_done_path}
+  hadoop fs -touchz ${tgt_done_path}
+  echo "insert data [$partition_date] done"
   sleep 3600
-<span class="k">done
-</span><span class="nb">set</span> <span class="nt">-e</span>
+done
+set -e
 </code></pre></div></div>
 
 <p>2、HDFS的/griffin/persist目录下没有统计结果文件，检查该目录的权限，设置合适的权限即可。</p>
@@ -556,31 +555,23 @@ hadoop fs <span class="nt">-touchz</span> <span class="k">${</span><span class="
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <img src="/images/incubator_feather_egg_logo.png" height="60">
+                <a href="https://www.apache.org/events/current-event.html">
+                    <img src="https://www.apache.org/events/current-event-234x60.png" alt="ASF Current Event">
+                </a>
             </div>
             <div class="col-md-9">
-                <div style="margin-left:auto; margin-right:auto; text-align:center;font-size:12px;">
-                    <div>
-                        Apache Griffin is an effort undergoing incubation at The Apache Software Foundation (ASF), sponsored by the Apache Incubator. Incubation is required of all newly accepted projects until a further review indicates that the infrastructure, communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. While incubation status is not necessarily a reflection of the completeness or stability of the code, it does indicate that the project has yet to be fully endorsed by the ASF.
-                    </div>
+                <div>
+                    Copyright © 2018 The Apache Software Foundation, Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br>
+                    Apache Griffin, Griffin, Apache, the Apache feather logo and the Apache Griffin logo are trademarks of The Apache Software Foundation.
                 </div>
             </div>
         </div>
-        <div class="row" style="padding-top:10px;">
-            Copyright © 2018 The Apache Software Foundation, Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br>
-			Apache Griffin, Griffin, Apache, the Apache feather logo and the Apache Griffin logo are trademarks of The Apache Software Foundation.
-        </div>
-		<div class="row text-center" style="padding-top:10px;">
-			<a href="https://www.apache.org/events/current-event.html">
-				<img src="https://www.apache.org/events/current-event-234x60.png" alt="ASF Current Event">
-			</a>
-		</div>
     </div>
 </div>
 <!-- footer end -->
 
 <!-- JavaScripts -->
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="/js/jquery-2.2.4.min.js"></script>
 
 
 
