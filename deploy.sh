@@ -19,6 +19,7 @@ tmp_dir="temp_$last_SHA"
 jekyll build -d ~/$tmp_dir > /dev/null 2>&1
 if [ $? = 0 ]; then
   echo "Jekyll build successful"
+  cp .asf.yaml ~/$tmp_dir # Hack
 else
   echo "Jekyll build failed"
   exit 1
