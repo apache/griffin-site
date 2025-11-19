@@ -19,7 +19,6 @@ tmp_dir="temp_$last_SHA"
 jekyll build -d ~/$tmp_dir > /dev/null 2>&1
 if [ $? = 0 ]; then
   echo "Jekyll build successful"
-  cp .asf.yaml ~/$tmp_dir # Hack
 else
   echo "Jekyll build failed"
   exit 1
@@ -41,6 +40,7 @@ current_dir=${PWD}
 rm -r $current_dir/*
 git rm -r --cached * > /dev/null 2>&1
 cp -r ~/$tmp_dir/* $current_dir
+cp .asf.yaml $current_dir # Hack
 
 # Commit the changes to the SITE branch
 message="Updated $SITE site from $SOURCE ($last_SHA)"
