@@ -23,6 +23,7 @@ else
   echo "Jekyll build failed"
   exit 1
 fi
+cp .asf.yaml ~/$tmp_dir/ # Hack
 
 # Switch to the SITE branch
 git checkout $SITE > /dev/null 2>&1
@@ -40,7 +41,7 @@ current_dir=${PWD}
 rm -r $current_dir/*
 git rm -r --cached * > /dev/null 2>&1
 cp -r ~/$tmp_dir/* $current_dir
-cp .asf.yaml $current_dir # Hack
+cp ~/$tmp_dir/.asf.yaml $current_dir # Hack
 
 # Commit the changes to the SITE branch
 message="Updated $SITE site from $SOURCE ($last_SHA)"
