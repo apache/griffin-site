@@ -1,2 +1,8 @@
+github:
+  description: "Web site for Apache Griffin"
+  homepage: https://griffin.apache.org/
+  labels:
+    - apache
+    - jekyll
 publish:
   whoami: asf-site
