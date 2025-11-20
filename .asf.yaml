@@ -3,6 +3,7 @@ github:
   homepage: https://griffin.apache.org/
   labels:
     - apache
+    - website
     - jekyll
 publish:
   whoami: asf-site
