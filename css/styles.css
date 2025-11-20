@@ -1,3 +1,5 @@
+@import url(/fonts/google-font-titillium-web.css);
+
 br{display:block; line-height:1.6em;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
 /*ol,ul{list-style:none;}*/
@@ -44,8 +46,6 @@ img{border:0; max-width:100%;}
 .clearfix{display:inline-block; width:100%;}
 html[xmlns] .clearfix{display:block;}
 * html .clearfix{height:1%;}
-
-@import url(/fonts/google-font-titillium-web.css);
 
 #sidebar {
     padding-top:0;
